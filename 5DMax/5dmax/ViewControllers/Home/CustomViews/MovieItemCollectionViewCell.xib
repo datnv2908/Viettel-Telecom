@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieItemCollectionViewCell" id="CGA-We-imL" customClass="MovieItemCollectionViewCell" customModule="Dev_5Dmax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="265"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FVx-7B-BDN">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="213"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FVx-7B-BDN" secondAttribute="height" multiplier="2/3" id="cv0-yy-NQz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The big short The big short The big" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76L-ph-b8g">
+                        <rect key="frame" x="0.0" y="218" width="142" height="16"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 đ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmK-Uw-dVq">
+                        <rect key="frame" x="0.0" y="238" width="142" height="14.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FVx-7B-BDN" firstAttribute="top" secondItem="CGA-We-imL" secondAttribute="top" id="4b7-3T-Q6a"/>
+                <constraint firstAttribute="trailing" secondItem="FVx-7B-BDN" secondAttribute="trailing" id="BCG-Fd-v7w"/>
+                <constraint firstAttribute="trailing" secondItem="76L-ph-b8g" secondAttribute="trailing" id="Crb-kw-B7J"/>
+                <constraint firstItem="76L-ph-b8g" firstAttribute="top" secondItem="FVx-7B-BDN" secondAttribute="bottom" constant="5" id="Lnh-7P-YKq"/>
+                <constraint firstItem="76L-ph-b8g" firstAttribute="leading" secondItem="CGA-We-imL" secondAttribute="leading" id="UC0-Po-G7Y"/>
+                <constraint firstItem="wmK-Uw-dVq" firstAttribute="top" secondItem="76L-ph-b8g" secondAttribute="bottom" constant="4" id="WIy-tY-WE4"/>
+                <constraint firstAttribute="trailing" secondItem="wmK-Uw-dVq" secondAttribute="trailing" id="bOA-wt-Cac"/>
+                <constraint firstItem="FVx-7B-BDN" firstAttribute="leading" secondItem="CGA-We-imL" secondAttribute="leading" id="uZO-Oq-kGJ"/>
+                <constraint firstItem="wmK-Uw-dVq" firstAttribute="leading" secondItem="CGA-We-imL" secondAttribute="leading" id="y9z-xJ-OV6"/>
+            </constraints>
+            <size key="customSize" width="131" height="169"/>
+            <connections>
+                <outlet property="lblPrice" destination="wmK-Uw-dVq" id="LJX-MH-YiS"/>
+                <outlet property="thumbImageView" destination="FVx-7B-BDN" id="G3Z-oU-2lh"/>
+                <outlet property="titleLabel" destination="76L-ph-b8g" id="a4e-Cl-Z2V"/>
+            </connections>
+            <point key="canvasLocation" x="-138" y="-214.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

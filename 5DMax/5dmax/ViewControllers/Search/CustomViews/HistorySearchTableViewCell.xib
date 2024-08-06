@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HistorySearchTableViewCell" customModule="Dev_5Dmax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLv-56-fXS">
+                        <rect key="frame" x="16" y="10" width="24" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="I9d-CC-yex"/>
+                            <constraint firstAttribute="width" constant="24" id="kkV-56-UfC"/>
+                        </constraints>
+                        <color key="tintColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="icClockTime1"/>
+                    </button>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNo-j0-bVF">
+                        <rect key="frame" x="384" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="7T3-I1-lgp"/>
+                            <constraint firstAttribute="height" constant="24" id="Llg-ed-Qlv"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Ybo-ky-rQ5"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="zQn-1Y-5fz"/>
+                        </constraints>
+                        <color key="tintColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="ionIosCloseOutlineIonicons"/>
+                        <connections>
+                            <action selector="onDeleteSuggestionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="K6i-eB-5UR"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6c-gb-Gai">
+                        <rect key="frame" x="416" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="80q-ev-eP8"/>
+                            <constraint firstAttribute="height" constant="24" id="Dzh-va-O3Y"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="JId-4P-WKX"/>
+                            <constraint firstAttribute="width" constant="24" id="apG-hH-m31"/>
+                        </constraints>
+                        <color key="tintColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="icArrowSuggestion2"/>
+                        <connections>
+                            <action selector="onGetSuggestionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8d7-tf-wbX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIY-RY-qmX">
+                        <rect key="frame" x="52" y="13" width="324" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="o6c-gb-Gai" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="33i-fd-KlZ"/>
+                    <constraint firstItem="nIY-RY-qmX" firstAttribute="centerY" secondItem="tLv-56-fXS" secondAttribute="centerY" id="5fa-ho-3wa"/>
+                    <constraint firstItem="o6c-gb-Gai" firstAttribute="centerY" secondItem="pNo-j0-bVF" secondAttribute="centerY" id="B3j-qa-leG"/>
+                    <constraint firstItem="tLv-56-fXS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="JQx-E3-DaH"/>
+                    <constraint firstItem="tLv-56-fXS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mb2-cb-dUA"/>
+                    <constraint firstItem="nIY-RY-qmX" firstAttribute="leading" secondItem="tLv-56-fXS" secondAttribute="trailing" constant="12" id="Qzg-wH-qiz"/>
+                    <constraint firstItem="pNo-j0-bVF" firstAttribute="leading" secondItem="nIY-RY-qmX" secondAttribute="trailing" constant="8" id="UV8-rs-Y0o"/>
+                    <constraint firstItem="o6c-gb-Gai" firstAttribute="leading" secondItem="pNo-j0-bVF" secondAttribute="trailing" constant="8" id="n6f-FP-ydX"/>
+                    <constraint firstAttribute="trailing" secondItem="o6c-gb-Gai" secondAttribute="trailing" constant="16" id="ytG-Fe-cvG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="nIY-RY-qmX" id="cxz-97-5hD"/>
+            </connections>
+            <point key="canvasLocation" x="-38.399999999999999" y="155.62218890554723"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icArrowSuggestion2" width="15" height="15"/>
+        <image name="icClockTime1" width="21" height="18"/>
+        <image name="ionIosCloseOutlineIonicons" width="16" height="16"/>
+    </resources>
+</document>

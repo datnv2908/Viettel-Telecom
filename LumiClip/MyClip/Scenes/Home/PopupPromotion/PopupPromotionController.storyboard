@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup Promotion View Controller-->
+        <scene sceneID="2sY-5r-gdi">
+            <objects>
+                <viewController storyboardIdentifier="PopupPromotionViewController" id="Fhs-Pu-ue2" customClass="PopupPromotionViewController" customModule="MyClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kUD-As-GTq"/>
+                        <viewControllerLayoutGuide type="bottom" id="plf-zn-e21"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f14-gf-yXs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_popup" translatesAutoresizingMaskIntoConstraints="NO" id="aeY-0k-tFz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX5-tj-K0w">
+                                <rect key="frame" x="291" y="20" width="68" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Odc-1J-p0J"/>
+                                    <constraint firstAttribute="width" constant="68" id="XBm-aC-Mi0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Bỏ qua">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopup:" destination="Fhs-Pu-ue2" eventType="touchUpInside" id="EYm-Ox-3Ho"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNv-fC-zxZ">
+                                <rect key="frame" x="62.5" y="557" width="250" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="H8D-Gi-aRq"/>
+                                    <constraint firstAttribute="height" constant="48" id="NLo-8P-fWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="DÙNG THỬ 1 THÁNG MIỄN PHÍ">
+                                    <color key="titleColor" red="0.0" green="0.63921568630000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doRegisterPromotion:" destination="Fhs-Pu-ue2" eventType="touchUpInside" id="HYf-nU-B4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WX5-tj-K0w" firstAttribute="top" secondItem="kUD-As-GTq" secondAttribute="bottom" id="CKu-EK-eJJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aeY-0k-tFz" secondAttribute="trailing" id="Iz9-U8-dLc"/>
+                            <constraint firstItem="WX5-tj-K0w" firstAttribute="trailing" secondItem="f14-gf-yXs" secondAttribute="trailingMargin" id="RQp-0v-sNm"/>
+                            <constraint firstItem="aeY-0k-tFz" firstAttribute="leading" secondItem="f14-gf-yXs" secondAttribute="leading" id="Saf-tz-MHb"/>
+                            <constraint firstItem="plf-zn-e21" firstAttribute="top" secondItem="aeY-0k-tFz" secondAttribute="bottom" id="aHp-Nx-YDG"/>
+                            <constraint firstItem="SNv-fC-zxZ" firstAttribute="centerX" secondItem="f14-gf-yXs" secondAttribute="centerX" id="ig9-fL-db4"/>
+                            <constraint firstItem="plf-zn-e21" firstAttribute="top" secondItem="SNv-fC-zxZ" secondAttribute="bottom" constant="62" id="iyC-ue-A1r"/>
+                            <constraint firstItem="aeY-0k-tFz" firstAttribute="top" secondItem="f14-gf-yXs" secondAttribute="top" id="qrx-BZ-CWp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="overBtn" destination="WX5-tj-K0w" id="jIP-L0-2M6"/>
+                        <outlet property="tryBtn" destination="SNv-fC-zxZ" id="aRQ-zy-sL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LIK-RE-Fj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215.19999999999999" y="-174.06296851574214"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_popup" width="375" height="667"/>
+    </resources>
+</document>

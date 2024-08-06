@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--List Price View Controller-->
+        <scene sceneID="ivf-fg-gNB">
+            <objects>
+                <viewController storyboardIdentifier="ListPriceViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KQj-Xr-0cB" customClass="ListPriceViewController" customModule="Dev_5Dmax" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TTe-PT-gsW"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTm-ac-meC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SsH-sv-eg6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XBH-Iz-6Wt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KQj-Xr-0cB" id="T26-bt-lFF"/>
+                                    <outlet property="delegate" destination="KQj-Xr-0cB" id="ahF-Q1-rEe"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di6-nc-gWY">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.57647058823529407" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cgn-U1-0WA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="17"/>
+                                <state key="normal" title="Đăng ký">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRegisterPressed:" destination="KQj-Xr-0cB" eventType="touchUpInside" id="B44-OW-6GV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XBH-Iz-6Wt" firstAttribute="top" secondItem="TTe-PT-gsW" secondAttribute="bottom" id="2FP-rl-Fxr"/>
+                            <constraint firstItem="GTm-ac-meC" firstAttribute="top" secondItem="XBH-Iz-6Wt" secondAttribute="bottom" id="BCd-0U-5gx"/>
+                            <constraint firstAttribute="trailing" secondItem="XBH-Iz-6Wt" secondAttribute="trailing" id="Lgw-57-o4L"/>
+                            <constraint firstItem="Di6-nc-gWY" firstAttribute="leading" secondItem="SsH-sv-eg6" secondAttribute="leading" id="Q8g-Z1-4ug"/>
+                            <constraint firstItem="XBH-Iz-6Wt" firstAttribute="leading" secondItem="SsH-sv-eg6" secondAttribute="leading" id="RT5-NY-Q9F"/>
+                            <constraint firstItem="GTm-ac-meC" firstAttribute="top" secondItem="Di6-nc-gWY" secondAttribute="bottom" id="sjq-ZB-8wB"/>
+                            <constraint firstAttribute="trailing" secondItem="Di6-nc-gWY" secondAttribute="trailing" id="t7F-vR-MEc"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="btnRegister" destination="Di6-nc-gWY" id="Q4N-np-rmI"/>
+                        <outlet property="tableView" destination="XBH-Iz-6Wt" id="XzB-Jh-HEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nm-8J-8AV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887.20000000000005" y="-377.36131934032989"/>
+        </scene>
+    </scenes>
+</document>

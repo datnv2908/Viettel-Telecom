@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CollectionTableViewCell" rowHeight="227" id="gKf-Of-SfJ" customClass="CollectionTableViewCell" customModule="Dev_5Dmax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="227"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gKf-Of-SfJ" id="3dX-uI-ipt">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="226.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Yx0-sh-Fdg">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="226.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JWM-Zf-jTZ">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="gKf-Of-SfJ" id="PXM-iU-pEE"/>
+                            <outlet property="delegate" destination="gKf-Of-SfJ" id="OeR-7n-bpV"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Yx0-sh-Fdg" secondAttribute="bottom" id="GXn-yt-WCh"/>
+                    <constraint firstItem="Yx0-sh-Fdg" firstAttribute="leading" secondItem="3dX-uI-ipt" secondAttribute="leading" id="QrU-sZ-1If"/>
+                    <constraint firstItem="Yx0-sh-Fdg" firstAttribute="top" secondItem="3dX-uI-ipt" secondAttribute="top" id="Qs2-Ki-9j4"/>
+                    <constraint firstAttribute="trailing" secondItem="Yx0-sh-Fdg" secondAttribute="trailing" id="qLF-FU-ZHS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="collectionView" destination="Yx0-sh-Fdg" id="qe1-QH-YKA"/>
+            </connections>
+            <point key="canvasLocation" x="-0.5" y="-162.5"/>
+        </tableViewCell>
+    </objects>
+</document>

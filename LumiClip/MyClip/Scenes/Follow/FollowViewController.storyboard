@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Follow View Controller-->
+        <scene sceneID="rQ4-Ow-ZWf">
+            <objects>
+                <viewController storyboardIdentifier="FollowViewController" id="9Cv-Dp-Cer" customClass="FollowViewController" customModule="MeuClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wRX-CR-iAx"/>
+                        <viewControllerLayoutGuide type="bottom" id="TeC-f1-xsg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h1r-gR-a4H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="apK-qy-vse">
+                                <rect key="frame" x="0.0" y="0.0" width="285" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="DaU-wm-Smq"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oSr-xT-0FM">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Cv-Dp-Cer" id="ksf-yj-WKG"/>
+                                    <outlet property="delegate" destination="9Cv-Dp-Cer" id="ikS-ET-vLh"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-LV-oUz">
+                                <rect key="frame" x="285" y="0.0" width="90" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="3ue-U5-lja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                                <state key="normal" title="Xem tất cả"/>
+                                <connections>
+                                    <action selector="onClickViewAllButton:" destination="9Cv-Dp-Cer" eventType="touchUpInside" id="tiH-9C-TV8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cw-m7-SkR">
+                                <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="CQN-Au-UzJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K6h-o1-rsS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Cv-Dp-Cer" id="4PE-GG-d5L"/>
+                                    <outlet property="delegate" destination="9Cv-Dp-Cer" id="Wa6-de-M3c"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K6h-o1-rsS" firstAttribute="leading" secondItem="h1r-gR-a4H" secondAttribute="leading" id="1fX-Rk-vKt"/>
+                            <constraint firstItem="8Cw-m7-SkR" firstAttribute="top" secondItem="apK-qy-vse" secondAttribute="bottom" constant="-1" id="B3V-G8-kiG"/>
+                            <constraint firstItem="apK-qy-vse" firstAttribute="top" secondItem="wRX-CR-iAx" secondAttribute="bottom" id="DUB-Zd-s7p"/>
+                            <constraint firstAttribute="trailing" secondItem="8Cw-m7-SkR" secondAttribute="trailing" id="FnF-Wh-Jne"/>
+                            <constraint firstItem="8Cw-m7-SkR" firstAttribute="leading" secondItem="h1r-gR-a4H" secondAttribute="leading" id="Jl4-f8-Ohg"/>
+                            <constraint firstItem="apK-qy-vse" firstAttribute="leading" secondItem="h1r-gR-a4H" secondAttribute="leading" id="Man-yp-Kec"/>
+                            <constraint firstItem="K6h-o1-rsS" firstAttribute="top" secondItem="8Cw-m7-SkR" secondAttribute="bottom" id="NiQ-zw-tIT"/>
+                            <constraint firstItem="TeC-f1-xsg" firstAttribute="top" secondItem="K6h-o1-rsS" secondAttribute="bottom" id="RQU-84-nF9"/>
+                            <constraint firstItem="XCq-LV-oUz" firstAttribute="top" secondItem="wRX-CR-iAx" secondAttribute="bottom" id="WY5-Se-UXw"/>
+                            <constraint firstItem="XCq-LV-oUz" firstAttribute="height" secondItem="apK-qy-vse" secondAttribute="height" id="WqV-Gp-bBL"/>
+                            <constraint firstAttribute="trailing" secondItem="K6h-o1-rsS" secondAttribute="trailing" id="iog-S1-EFt"/>
+                            <constraint firstAttribute="trailing" secondItem="XCq-LV-oUz" secondAttribute="trailing" id="w0B-GJ-elJ"/>
+                            <constraint firstItem="XCq-LV-oUz" firstAttribute="leading" secondItem="apK-qy-vse" secondAttribute="trailing" id="woa-3k-8d0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="apK-qy-vse" id="odU-Md-GTr"/>
+                        <outlet property="collectionViewHeight" destination="DaU-wm-Smq" id="1ky-xR-0iJ"/>
+                        <outlet property="seeAllButton" destination="XCq-LV-oUz" id="DX8-aO-NCL"/>
+                        <outlet property="seprateView" destination="8Cw-m7-SkR" id="YWe-wx-Chy"/>
+                        <outlet property="tableView" destination="K6h-o1-rsS" id="B3c-pc-FbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbf-nM-zcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="231.63418290854574"/>
+        </scene>
+    </scenes>
+</document>

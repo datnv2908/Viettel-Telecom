@@ -1,0 +1,6 @@
+framework module Pods_5dmax___dev {
+  umbrella header "Pods-5dmax - dev-umbrella.h"
+
+  export *
+  module * { export * }
+}

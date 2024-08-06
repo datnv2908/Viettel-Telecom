@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentInfoTableViewCell" rowHeight="174" id="BB0-sS-Ba7" customClass="CommentInfoTableViewCell" customModule="MeuClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BB0-sS-Ba7" id="okq-J9-xKz">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUserCopy" translatesAutoresizingMaskIntoConstraints="NO" id="33R-Ax-9tL">
+                        <rect key="frame" x="11" y="15" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="tWZ-QZ-t9W"/>
+                            <constraint firstAttribute="width" constant="32" id="v9c-ng-oky"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThienND8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GX-Df-3bs">
+                        <rect key="frame" x="53" y="15.5" width="53" height="14"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-1Q-Zl0">
+                        <rect key="frame" x="53" y="101" width="50" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="glC-nF-KsM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="32" image="iconLike">
+                            <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="iconLiked"/>
+                        <connections>
+                            <action selector="onClickLikeButton:" destination="BB0-sS-Ba7" eventType="touchUpInside" id="1uF-Jx-YsJ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmD-un-neS">
+                        <rect key="frame" x="163" y="99" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="tym-sf-5rw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="8" image="iconComment">
+                            <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onClickCommentButton:" destination="BB0-sS-Ba7" eventType="touchUpInside" id="aEd-8U-tZT"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-uG-aDQ">
+                        <rect key="frame" x="111" y="21" width="3" height="3"/>
+                        <color key="backgroundColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="cgg-ui-0yA"/>
+                            <constraint firstAttribute="width" constant="3" id="p3f-eu-aIv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="3 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-Ar-WKa">
+                        <rect key="frame" x="122" y="15.5" width="57.5" height="14"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU5-AB-tKV">
+                        <rect key="frame" x="339" y="0.0" width="36" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="pKX-xF-O6o"/>
+                            <constraint firstAttribute="width" constant="36" id="yU9-4A-wHK"/>
+                        </constraints>
+                        <state key="normal" image="moreGray"/>
+                        <connections>
+                            <action selector="onClickEditButton:" destination="BB0-sS-Ba7" eventType="touchUpInside" id="SW2-7p-sWl"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTq-S7-JgX">
+                        <rect key="frame" x="108" y="101" width="50" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="bh1-rH-X9S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="32" image="iconDislike">
+                            <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="iconLiked"/>
+                        <connections>
+                            <action selector="onDislike:" destination="BB0-sS-Ba7" eventType="touchUpInside" id="amh-4A-grp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuw-gL-m2b">
+                        <rect key="frame" x="228" y="101" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="nbQ-uD-AIp"/>
+                        </constraints>
+                        <state key="normal" image="rejectIcon"/>
+                        <connections>
+                            <action selector="rejectAction:" destination="BB0-sS-Ba7" eventType="touchUpInside" id="35L-Vq-EI8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0N-ei-VjM">
+                        <rect key="frame" x="53" y="134" width="307" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="AM5-DZ-RWr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Xem câu trả lời"/>
+                        <connections>
+                            <action selector="onSelectShowSubComment:" destination="BB0-sS-Ba7" eventType="touchUpInside" id="DVS-RF-WYT"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="My Clip is a best of video app. Good good ! 123456" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfj-St-h1b">
+                        <rect key="frame" x="53" y="39.5" width="286" height="51.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pU5-AB-tKV" secondAttribute="trailing" id="3r6-cs-Hsk"/>
+                    <constraint firstItem="IOf-1Q-Zl0" firstAttribute="top" secondItem="Gfj-St-h1b" secondAttribute="bottom" constant="10" id="3xy-bV-JEr"/>
+                    <constraint firstItem="kY4-uG-aDQ" firstAttribute="centerY" secondItem="6GX-Df-3bs" secondAttribute="centerY" id="5Nv-cQ-WBA"/>
+                    <constraint firstItem="IOf-1Q-Zl0" firstAttribute="leading" secondItem="6GX-Df-3bs" secondAttribute="leading" id="811-wO-d8h"/>
+                    <constraint firstItem="iuw-gL-m2b" firstAttribute="top" secondItem="gTq-S7-JgX" secondAttribute="top" id="8Ma-aW-1CF"/>
+                    <constraint firstItem="kY4-uG-aDQ" firstAttribute="top" secondItem="okq-J9-xKz" secondAttribute="topMargin" constant="10" id="9iq-wQ-s3s"/>
+                    <constraint firstItem="kY4-uG-aDQ" firstAttribute="leading" secondItem="6GX-Df-3bs" secondAttribute="trailing" constant="5" id="Czx-eU-FHj"/>
+                    <constraint firstItem="33R-Ax-9tL" firstAttribute="top" secondItem="okq-J9-xKz" secondAttribute="top" constant="15" id="D0S-xv-ZOJ"/>
+                    <constraint firstItem="iuw-gL-m2b" firstAttribute="bottom" secondItem="gTq-S7-JgX" secondAttribute="bottom" id="GBg-fs-4vP"/>
+                    <constraint firstItem="kY4-uG-aDQ" firstAttribute="centerY" secondItem="Zuf-Ar-WKa" secondAttribute="centerY" id="H5f-a1-VRg"/>
+                    <constraint firstItem="lmD-un-neS" firstAttribute="leading" secondItem="gTq-S7-JgX" secondAttribute="trailing" constant="5" id="HTS-hi-mbS"/>
+                    <constraint firstItem="6GX-Df-3bs" firstAttribute="leading" secondItem="33R-Ax-9tL" secondAttribute="trailing" constant="10" id="Hxu-YB-h8y"/>
+                    <constraint firstItem="gTq-S7-JgX" firstAttribute="top" secondItem="IOf-1Q-Zl0" secondAttribute="top" id="K0O-wT-ry1"/>
+                    <constraint firstItem="Z0N-ei-VjM" firstAttribute="leading" secondItem="IOf-1Q-Zl0" secondAttribute="leading" id="M5W-yL-vzy"/>
+                    <constraint firstItem="Gfj-St-h1b" firstAttribute="top" secondItem="6GX-Df-3bs" secondAttribute="bottom" constant="10" id="M8O-hg-dme"/>
+                    <constraint firstItem="Gfj-St-h1b" firstAttribute="leading" secondItem="6GX-Df-3bs" secondAttribute="leading" id="Mdr-0I-ACB"/>
+                    <constraint firstItem="33R-Ax-9tL" firstAttribute="leading" secondItem="okq-J9-xKz" secondAttribute="leading" constant="11" id="OZJ-Pa-I5u"/>
+                    <constraint firstItem="pU5-AB-tKV" firstAttribute="top" secondItem="okq-J9-xKz" secondAttribute="top" id="Q8S-62-U3N"/>
+                    <constraint firstItem="lmD-un-neS" firstAttribute="bottom" secondItem="IOf-1Q-Zl0" secondAttribute="bottom" id="QEZ-dh-sXM"/>
+                    <constraint firstItem="Zuf-Ar-WKa" firstAttribute="leading" secondItem="kY4-uG-aDQ" secondAttribute="trailing" constant="8" id="TzA-6F-rCe"/>
+                    <constraint firstAttribute="bottom" secondItem="Z0N-ei-VjM" secondAttribute="bottom" constant="10" id="XBL-Xi-Y0h"/>
+                    <constraint firstItem="iuw-gL-m2b" firstAttribute="leading" secondItem="lmD-un-neS" secondAttribute="trailing" constant="5" id="aOH-th-tmG"/>
+                    <constraint firstItem="Z0N-ei-VjM" firstAttribute="top" secondItem="IOf-1Q-Zl0" secondAttribute="bottom" constant="15" id="aph-0U-U6q"/>
+                    <constraint firstItem="pU5-AB-tKV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zuf-Ar-WKa" secondAttribute="trailing" constant="10" id="eKe-p1-sdu"/>
+                    <constraint firstAttribute="trailing" secondItem="Z0N-ei-VjM" secondAttribute="trailing" constant="15" id="eXA-c0-aj4"/>
+                    <constraint firstItem="Gfj-St-h1b" firstAttribute="trailing" secondItem="pU5-AB-tKV" secondAttribute="leading" id="gSp-8P-3QM"/>
+                    <constraint firstItem="gTq-S7-JgX" firstAttribute="leading" secondItem="IOf-1Q-Zl0" secondAttribute="trailing" constant="5" id="gjQ-CX-Egh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnReject" destination="iuw-gL-m2b" id="cnH-We-oAw"/>
+                <outlet property="commentButton" destination="lmD-un-neS" id="ISB-yR-yfi"/>
+                <outlet property="descLabel" destination="6GX-Df-3bs" id="Ai0-49-uxv"/>
+                <outlet property="disLikeBtn" destination="gTq-S7-JgX" id="Ng8-ti-8c0"/>
+                <outlet property="likeButton" destination="IOf-1Q-Zl0" id="J9i-IF-zI6"/>
+                <outlet property="moreActionBtn" destination="pU5-AB-tKV" id="T7X-ht-q78"/>
+                <outlet property="postedAtLabel" destination="Zuf-Ar-WKa" id="GOs-jw-RdR"/>
+                <outlet property="showMoreHeightConstaint" destination="AM5-DZ-RWr" id="SjK-27-faf"/>
+                <outlet property="showSubCommentButton" destination="Z0N-ei-VjM" id="Was-vY-wGb"/>
+                <outlet property="spacingBottomConstaint" destination="XBL-Xi-Y0h" id="kqW-Yk-pDC"/>
+                <outlet property="spacingLeadingImage" destination="OZJ-Pa-I5u" id="l8I-Jb-u9R"/>
+                <outlet property="spacingTopConstain" destination="aph-0U-U6q" id="TrQ-Dk-xVU"/>
+                <outlet property="thumbImageView" destination="33R-Ax-9tL" id="iJN-0h-xKr"/>
+                <outlet property="titleLabel" destination="Gfj-St-h1b" id="T7v-Me-LkL"/>
+                <outlet property="widthConstrantCommentView" destination="tym-sf-5rw" id="8rp-n0-6Gd"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="84"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconComment" width="21" height="20"/>
+        <image name="iconDislike" width="18" height="18"/>
+        <image name="iconLike" width="18" height="18"/>
+        <image name="iconLiked" width="18" height="18"/>
+        <image name="iconUserCopy" width="32" height="32"/>
+        <image name="moreGray" width="3" height="12"/>
+        <image name="rejectIcon" width="16" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  5dmax
+
+  Created by Đào Văn Nghiên on 5/31/20.
+  Copyright © 2020 Huy Nguyen. All rights reserved.
+*/
+
+"LSApplicationCategoryType" = "Esto te permite hacer cosas como grabar video, identificar canciones y buscar con tu voz.";
+"NSBluetoothAlwaysUsageDescription" = "Usando el Bluetooth te conectas a ChromeCast";
+"NSBluetoothPeripheralUsageDescription" = "Usando el Bluetooth te conectas a ChromeCast";
+"NSMicrophoneUsageDescription" = "Esto te permite hacer cosas como grabar videos, identificar canciones y buscar con tu voz.";
+"NSSpeechRecognitionUsageDescription" = "Habla y mira cómo tus palabras se convierten en texto o di un color para ver cómo la caja gris cambia de color.";

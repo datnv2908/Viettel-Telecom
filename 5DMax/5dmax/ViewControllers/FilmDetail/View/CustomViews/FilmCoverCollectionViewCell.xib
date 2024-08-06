@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilmCoverCollectionViewCell" id="gTV-IL-0wX" customClass="FilmCoverCollectionViewCell" customModule="Bitel_Video" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-fj-trp">
+                        <rect key="frame" x="0.0" y="186" width="375" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Ih4-si-FS4"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mRs-yw-Q9P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmy-2v-8ed">
+                        <rect key="frame" x="154.5" y="85" width="66" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="gSa-o2-Gyt"/>
+                            <constraint firstAttribute="height" constant="66" id="tMt-ME-XVN"/>
+                        </constraints>
+                        <state key="normal" image="icPlay_detail"/>
+                        <connections>
+                            <action selector="onPlay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Apc-dp-3Ng"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truy Tìm Hung Thủ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNR-el-NnR">
+                        <rect key="frame" x="10" y="212" width="355" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="p1g-fj-trp" secondAttribute="bottom" id="Abu-RJ-scZ"/>
+                <constraint firstAttribute="trailing" secondItem="p1g-fj-trp" secondAttribute="trailing" id="BuH-nA-kee"/>
+                <constraint firstItem="bmy-2v-8ed" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="COg-66-74R"/>
+                <constraint firstAttribute="bottom" secondItem="uNR-el-NnR" secondAttribute="bottom" id="EN6-5r-nEP"/>
+                <constraint firstItem="p1g-fj-trp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ESP-O4-Y1x"/>
+                <constraint firstAttribute="bottom" secondItem="mRs-yw-Q9P" secondAttribute="bottom" id="Gi5-Q7-6rf"/>
+                <constraint firstItem="bmy-2v-8ed" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Moa-YK-S7p"/>
+                <constraint firstAttribute="trailing" secondItem="mRs-yw-Q9P" secondAttribute="trailing" id="kSc-9E-tUd"/>
+                <constraint firstItem="uNR-el-NnR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kgM-bU-rD8"/>
+                <constraint firstItem="mRs-yw-Q9P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="myL-pT-JcB"/>
+                <constraint firstItem="mRs-yw-Q9P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rjF-hn-XZT"/>
+                <constraint firstAttribute="trailing" secondItem="uNR-el-NnR" secondAttribute="trailing" constant="10" id="w4O-Va-yF6"/>
+            </constraints>
+            <size key="customSize" width="375" height="236"/>
+            <connections>
+                <outlet property="gradientView" destination="p1g-fj-trp" id="hCf-cD-UOr"/>
+                <outlet property="playButton" destination="bmy-2v-8ed" id="ltg-bG-5UF"/>
+                <outlet property="thumbImageView" destination="mRs-yw-Q9P" id="nqY-qd-nfi"/>
+                <outlet property="titleLabel" destination="uNR-el-NnR" id="nrF-NX-mKZ"/>
+            </connections>
+            <point key="canvasLocation" x="-275" y="14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icPlay_detail" width="66" height="66"/>
+    </resources>
+</document>

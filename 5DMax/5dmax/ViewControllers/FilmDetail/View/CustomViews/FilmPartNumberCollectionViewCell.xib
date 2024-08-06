@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilmPartNumberCollectionViewCell" customModule="Bitel_Video" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="107"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LlH-bm-Pdo">
+                        <rect key="frame" x="0.0" y="8" width="106.5" height="60"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="LnU-9m-D02"/>
+                            <constraint firstAttribute="width" secondItem="LlH-bm-Pdo" secondAttribute="height" multiplier="16:9" id="dh3-3z-TeQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tập 0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twd-0E-Gog">
+                        <rect key="frame" x="116.5" y="8" width="206.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 phút" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byx-ku-sPt">
+                        <rect key="frame" x="116.5" y="25" width="208.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smK-rY-gLo">
+                        <rect key="frame" x="280" y="15.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="DMT-MS-59G"/>
+                            <constraint firstAttribute="height" constant="45" id="ned-88-QWe"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="icDownload"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFH-7m-9aY">
+                        <rect key="frame" x="0.0" y="70.5" width="323" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NFH-7m-9aY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5K0-a5-4g6"/>
+                <constraint firstItem="LlH-bm-Pdo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="5YE-BX-OT9"/>
+                <constraint firstItem="NFH-7m-9aY" firstAttribute="top" secondItem="smK-rY-gLo" secondAttribute="bottom" constant="10" id="CC2-v5-nm1"/>
+                <constraint firstItem="twd-0E-Gog" firstAttribute="top" secondItem="LlH-bm-Pdo" secondAttribute="top" id="Dh5-eg-2Sg"/>
+                <constraint firstAttribute="trailing" secondItem="NFH-7m-9aY" secondAttribute="trailing" constant="10" id="J04-Rd-z4z"/>
+                <constraint firstAttribute="trailing" secondItem="twd-0E-Gog" secondAttribute="trailing" constant="10" id="NdU-G7-lL1"/>
+                <constraint firstItem="twd-0E-Gog" firstAttribute="leading" secondItem="LlH-bm-Pdo" secondAttribute="trailing" constant="10" id="Nos-J1-h8e"/>
+                <constraint firstAttribute="bottom" secondItem="NFH-7m-9aY" secondAttribute="bottom" constant="10" id="PNh-Nf-hy0"/>
+                <constraint firstItem="smK-rY-gLo" firstAttribute="centerY" secondItem="LlH-bm-Pdo" secondAttribute="centerY" id="UOd-tE-yS5"/>
+                <constraint firstAttribute="trailing" secondItem="smK-rY-gLo" secondAttribute="trailing" constant="8" id="bTH-2q-D4z"/>
+                <constraint firstItem="byx-ku-sPt" firstAttribute="leading" secondItem="LlH-bm-Pdo" secondAttribute="trailing" constant="10" id="eUJ-v8-WhK"/>
+                <constraint firstAttribute="trailing" secondItem="byx-ku-sPt" secondAttribute="trailing" constant="8" id="fCm-Qm-ftp"/>
+                <constraint firstItem="LlH-bm-Pdo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gXL-NU-juz"/>
+                <constraint firstItem="byx-ku-sPt" firstAttribute="top" secondItem="twd-0E-Gog" secondAttribute="bottom" id="rEH-em-erw"/>
+            </constraints>
+            <size key="customSize" width="333" height="107"/>
+            <connections>
+                <outlet property="descFilm" destination="NFH-7m-9aY" id="p6z-kX-O9S"/>
+                <outlet property="descLabel" destination="byx-ku-sPt" id="Kj8-kT-HnF"/>
+                <outlet property="thumbImageView" destination="LlH-bm-Pdo" id="Fqz-G6-UUx"/>
+                <outlet property="titleLabel" destination="twd-0E-Gog" id="RsH-Mp-mhH"/>
+            </connections>
+            <point key="canvasLocation" x="-253.59999999999999" y="-6.746626686656672"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icDownload" width="14" height="19"/>
+    </resources>
+</document>

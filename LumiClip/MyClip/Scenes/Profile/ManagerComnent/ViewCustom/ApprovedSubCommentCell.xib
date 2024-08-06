@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="ApprovedSubCommentCell" customModule="MeuClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThienND8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeZ-Tv-Z69">
+                        <rect key="frame" x="47" y="10" width="53" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14.5" id="6Yh-60-4Gs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZW-Dd-gWk">
+                        <rect key="frame" x="227" y="97" width="30" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Iio-CA-9v4"/>
+                        </constraints>
+                        <state key="normal" image="rejectIcon"/>
+                        <connections>
+                            <action selector="rejectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RSm-CK-HkI"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AR-eD-WfC">
+                        <rect key="frame" x="107" y="97" width="50" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="gkK-82-6Uk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="32" image="iconDislike">
+                            <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="iconLiked"/>
+                        <connections>
+                            <action selector="onDislike:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kUW-Rq-ig1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJv-IT-v1S">
+                        <rect key="frame" x="52" y="34.5" width="258" height="52.5"/>
+                        <string key="text">My Clip is a best of video app. Good good !My Clip is a best of video app. Good good !My Clip is a best of video app. Good good !My Clip is a best of video app. Good good !My Clip is a best of video app. Good good !My Clip is a best of video app. Good good !</string>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUserCopy" translatesAutoresizingMaskIntoConstraints="NO" id="HdA-V7-Mho">
+                        <rect key="frame" x="10" y="10" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="PTO-mc-nTA"/>
+                            <constraint firstAttribute="height" constant="32" id="bCU-4n-gWb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7v-Nf-Q1m">
+                        <rect key="frame" x="103" y="16" width="3" height="3"/>
+                        <color key="backgroundColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="G0Z-g1-r3V"/>
+                            <constraint firstAttribute="height" constant="3" id="bS0-eT-FrR"/>
+                            <constraint firstAttribute="width" constant="3" id="hF7-sQ-ctI"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="3" id="xBz-JJ-dER"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvC-OF-hdw">
+                        <rect key="frame" x="162" y="97" width="60" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Snp-yM-J94"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="8" image="iconComment">
+                            <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onClickCommentButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uYK-tW-r17"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBI-ky-o82">
+                        <rect key="frame" x="52" y="97" width="50" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="SIj-iT-4e9"/>
+                            <constraint firstAttribute="width" constant="50" id="a7V-5c-ydl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="32" image="iconLike">
+                            <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="iconLiked"/>
+                        <connections>
+                            <action selector="onClickLikeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YX9-IR-pl5"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="3 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzR-Wf-Haw">
+                        <rect key="frame" x="110" y="10" width="57.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LvC-OF-hdw" firstAttribute="bottom" secondItem="hBI-ky-o82" secondAttribute="bottom" id="7bx-v8-24H"/>
+                    <constraint firstItem="MeZ-Tv-Z69" firstAttribute="leading" secondItem="HdA-V7-Mho" secondAttribute="trailing" constant="5" id="DJa-Jy-Xam"/>
+                    <constraint firstItem="9AR-eD-WfC" firstAttribute="leading" secondItem="hBI-ky-o82" secondAttribute="trailing" constant="5" id="HI1-h2-NGH"/>
+                    <constraint firstItem="LvC-OF-hdw" firstAttribute="top" secondItem="hBI-ky-o82" secondAttribute="top" id="JT2-0g-GYV"/>
+                    <constraint firstItem="MZW-Dd-gWk" firstAttribute="leading" secondItem="LvC-OF-hdw" secondAttribute="trailing" constant="5" id="Jhc-aH-Nct"/>
+                    <constraint firstItem="hBI-ky-o82" firstAttribute="leading" secondItem="UJv-IT-v1S" secondAttribute="leading" id="K4n-U5-CfL"/>
+                    <constraint firstItem="LvC-OF-hdw" firstAttribute="leading" secondItem="9AR-eD-WfC" secondAttribute="trailing" constant="5" id="MaU-dh-fjk"/>
+                    <constraint firstItem="UJv-IT-v1S" firstAttribute="top" secondItem="MeZ-Tv-Z69" secondAttribute="bottom" constant="10" id="Mar-9e-23T"/>
+                    <constraint firstItem="HdA-V7-Mho" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="N4r-RU-9j2"/>
+                    <constraint firstItem="pzR-Wf-Haw" firstAttribute="centerY" secondItem="B7v-Nf-Q1m" secondAttribute="centerY" id="P51-pj-lyG"/>
+                    <constraint firstItem="HdA-V7-Mho" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RFQ-eN-TWl"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pzR-Wf-Haw" secondAttribute="trailing" constant="10" id="SPe-qN-iYs"/>
+                    <constraint firstItem="9AR-eD-WfC" firstAttribute="bottom" secondItem="hBI-ky-o82" secondAttribute="bottom" id="TQD-Us-zYp"/>
+                    <constraint firstItem="B7v-Nf-Q1m" firstAttribute="leading" secondItem="MeZ-Tv-Z69" secondAttribute="trailing" constant="3" id="U2q-Db-O7z"/>
+                    <constraint firstItem="B7v-Nf-Q1m" firstAttribute="centerY" secondItem="MeZ-Tv-Z69" secondAttribute="centerY" id="Vuy-gZ-kyg"/>
+                    <constraint firstItem="UJv-IT-v1S" firstAttribute="leading" secondItem="HdA-V7-Mho" secondAttribute="trailing" constant="10" id="auN-1R-jIo"/>
+                    <constraint firstItem="9AR-eD-WfC" firstAttribute="top" secondItem="hBI-ky-o82" secondAttribute="top" id="e4c-Yw-Ego"/>
+                    <constraint firstItem="9AR-eD-WfC" firstAttribute="top" secondItem="MZW-Dd-gWk" secondAttribute="bottom" constant="-18" id="eke-NF-drN"/>
+                    <constraint firstItem="MZW-Dd-gWk" firstAttribute="top" secondItem="UJv-IT-v1S" secondAttribute="bottom" constant="10" id="fug-fn-UeU"/>
+                    <constraint firstItem="MeZ-Tv-Z69" firstAttribute="top" secondItem="HdA-V7-Mho" secondAttribute="top" id="iNM-ce-12q"/>
+                    <constraint firstItem="MZW-Dd-gWk" firstAttribute="top" secondItem="9AR-eD-WfC" secondAttribute="top" id="lE5-oj-Jtd"/>
+                    <constraint firstAttribute="bottom" secondItem="hBI-ky-o82" secondAttribute="bottom" constant="10" id="mTz-M1-Lv5"/>
+                    <constraint firstItem="MZW-Dd-gWk" firstAttribute="bottom" secondItem="9AR-eD-WfC" secondAttribute="bottom" id="mWL-JX-aGY"/>
+                    <constraint firstItem="pzR-Wf-Haw" firstAttribute="leading" secondItem="B7v-Nf-Q1m" secondAttribute="trailing" constant="4" id="toN-9S-zTy"/>
+                    <constraint firstAttribute="trailing" secondItem="UJv-IT-v1S" secondAttribute="trailing" constant="10" id="xMr-RB-D5q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnReject" destination="MZW-Dd-gWk" id="Cax-lM-eOh"/>
+                <outlet property="commentButton" destination="LvC-OF-hdw" id="hk1-8q-80X"/>
+                <outlet property="descLabel" destination="MeZ-Tv-Z69" id="UAy-Kg-EBl"/>
+                <outlet property="disLikeBtn" destination="9AR-eD-WfC" id="VOc-gv-aJs"/>
+                <outlet property="likeButton" destination="hBI-ky-o82" id="et5-aB-g3D"/>
+                <outlet property="postedAtLabel" destination="pzR-Wf-Haw" id="a9F-zu-jty"/>
+                <outlet property="spacingLeadingImage" destination="RFQ-eN-TWl" id="mVj-6b-1HQ"/>
+                <outlet property="thumbImageView" destination="HdA-V7-Mho" id="PI1-Ad-zbU"/>
+                <outlet property="titleLabel" destination="UJv-IT-v1S" id="Tsl-Nx-mZ5"/>
+                <outlet property="widthConstrantCommentView" destination="Snp-yM-J94" id="eS2-TN-gzW"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="98.102678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconComment" width="21" height="20"/>
+        <image name="iconDislike" width="18" height="18"/>
+        <image name="iconLike" width="18" height="18"/>
+        <image name="iconLiked" width="18" height="18"/>
+        <image name="iconUserCopy" width="32" height="32"/>
+        <image name="rejectIcon" width="16" height="14"/>
+    </resources>
+</document>

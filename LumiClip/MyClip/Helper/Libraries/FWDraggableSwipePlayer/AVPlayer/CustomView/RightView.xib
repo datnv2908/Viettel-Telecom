@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightView">
+            <connections>
+                <outlet property="controlView" destination="JRQ-az-xm7" id="3Uk-0e-6M8"/>
+                <outlet property="view" destination="J2L-NB-6sk" id="I2l-2y-4G6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="J2L-NB-6sk">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="228"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRQ-az-xm7">
+                    <rect key="frame" x="88" y="90" width="27.5" height="49"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foward" translatesAutoresizingMaskIntoConstraints="NO" id="e64-pp-VaM">
+                            <rect key="frame" x="1.5" y="0.0" width="24" height="24"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-n3-OHU">
+                            <rect key="frame" x="0.0" y="29" width="27.5" height="20"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="e64-pp-VaM" firstAttribute="centerX" secondItem="JRQ-az-xm7" secondAttribute="centerX" id="FIE-Ge-g0f"/>
+                        <constraint firstItem="e64-pp-VaM" firstAttribute="top" secondItem="JRQ-az-xm7" secondAttribute="top" id="Jf4-CF-GDE"/>
+                        <constraint firstItem="ulO-n3-OHU" firstAttribute="top" secondItem="e64-pp-VaM" secondAttribute="bottom" constant="5" id="Nkt-jQ-TCz"/>
+                        <constraint firstItem="ulO-n3-OHU" firstAttribute="centerX" secondItem="JRQ-az-xm7" secondAttribute="centerX" id="d51-58-893"/>
+                        <constraint firstAttribute="trailing" secondItem="ulO-n3-OHU" secondAttribute="trailing" id="fca-qZ-v3z"/>
+                        <constraint firstAttribute="bottom" secondItem="ulO-n3-OHU" secondAttribute="bottom" id="tSM-N1-sLS"/>
+                        <constraint firstItem="ulO-n3-OHU" firstAttribute="leading" secondItem="JRQ-az-xm7" secondAttribute="leading" id="vcO-FP-kTH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JRQ-az-xm7" firstAttribute="centerY" secondItem="J2L-NB-6sk" secondAttribute="centerY" id="eiy-yY-K6E"/>
+                <constraint firstItem="JRQ-az-xm7" firstAttribute="centerX" secondItem="J2L-NB-6sk" secondAttribute="centerX" id="yAe-bT-z3r"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-169.5" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="foward" width="24" height="24"/>
+    </resources>
+</document>

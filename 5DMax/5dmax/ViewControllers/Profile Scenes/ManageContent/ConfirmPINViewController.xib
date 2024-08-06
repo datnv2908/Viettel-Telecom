@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmPINViewController" customModule="Dev_5Dmax" customModuleProvider="target">
+            <connections>
+                <outlet property="lblError" destination="xsP-YB-oUc" id="PCI-oA-Q4B"/>
+                <outlet property="lblTitle" destination="JeY-9d-Bh3" id="4l9-Zx-cX4"/>
+                <outlet property="txfCode1" destination="6y2-et-IGV" id="Hlp-2c-THJ"/>
+                <outlet property="txfCode2" destination="Wtx-PX-wo1" id="jBd-eX-rqt"/>
+                <outlet property="txfCode3" destination="YQU-d1-YdM" id="CLF-4m-jUx"/>
+                <outlet property="txfCode4" destination="W0z-82-dQs" id="AcN-8s-5ia"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPo-nD-qF9">
+                    <rect key="frame" x="48" y="75" width="224" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6y2-et-IGV">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="zNJ-xu-eVz"/>
+                            </constraints>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="aMS-ux-jWE"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wtx-PX-wo1">
+                            <rect key="frame" x="58" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="nbe-HW-Kop"/>
+                            </constraints>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="xZr-O7-aBD"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQU-d1-YdM">
+                            <rect key="frame" x="116" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="JFe-j9-vES"/>
+                            </constraints>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="K41-qJ-GnJ"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-82-dQs">
+                            <rect key="frame" x="174" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="ePD-hE-nxR"/>
+                            </constraints>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Xwf-ul-B2L"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Wtx-PX-wo1" firstAttribute="top" secondItem="xPo-nD-qF9" secondAttribute="top" id="4Sv-ib-vKp"/>
+                        <constraint firstItem="W0z-82-dQs" firstAttribute="top" secondItem="xPo-nD-qF9" secondAttribute="top" id="9JS-Wv-F5z"/>
+                        <constraint firstAttribute="bottom" secondItem="6y2-et-IGV" secondAttribute="bottom" id="EoU-gg-RLw"/>
+                        <constraint firstAttribute="width" constant="224" id="I0b-9C-JGA"/>
+                        <constraint firstItem="YQU-d1-YdM" firstAttribute="top" secondItem="xPo-nD-qF9" secondAttribute="top" id="Ise-4P-8Og"/>
+                        <constraint firstAttribute="bottom" secondItem="YQU-d1-YdM" secondAttribute="bottom" id="KDI-il-ekz"/>
+                        <constraint firstAttribute="trailing" secondItem="W0z-82-dQs" secondAttribute="trailing" id="fiv-Cw-jlm"/>
+                        <constraint firstItem="6y2-et-IGV" firstAttribute="top" secondItem="xPo-nD-qF9" secondAttribute="top" id="jF5-vy-pV3"/>
+                        <constraint firstItem="Wtx-PX-wo1" firstAttribute="leading" secondItem="6y2-et-IGV" secondAttribute="trailing" constant="8" id="oIU-uS-x92"/>
+                        <constraint firstAttribute="height" constant="50" id="oo8-dh-quh"/>
+                        <constraint firstAttribute="bottom" secondItem="W0z-82-dQs" secondAttribute="bottom" id="sDd-8E-F2X"/>
+                        <constraint firstItem="6y2-et-IGV" firstAttribute="leading" secondItem="xPo-nD-qF9" secondAttribute="leading" id="vB3-fk-xeU"/>
+                        <constraint firstAttribute="bottom" secondItem="Wtx-PX-wo1" secondAttribute="bottom" id="zAh-yD-FM9"/>
+                        <constraint firstItem="W0z-82-dQs" firstAttribute="leading" secondItem="YQU-d1-YdM" secondAttribute="trailing" constant="8" id="zMT-lb-shU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập mã PIN hiện tại" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeY-9d-Bh3">
+                    <rect key="frame" x="8" y="15" width="304" height="19.5"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Mã PIN không đúng   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsP-YB-oUc">
+                    <rect key="frame" x="98" y="140" width="124.5" height="20"/>
+                    <color key="backgroundColor" red="0.81960784310000001" green="0.070588235289999995" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="hts-tQ-Odz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xsP-YB-oUc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0on-hL-7br"/>
+                <constraint firstItem="xPo-nD-qF9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KGH-wK-cJb"/>
+                <constraint firstItem="xPo-nD-qF9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Nsj-zs-se5"/>
+                <constraint firstItem="JeY-9d-Bh3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="QEx-Gf-yON"/>
+                <constraint firstAttribute="trailing" secondItem="JeY-9d-Bh3" secondAttribute="trailing" constant="8" id="Ssi-Fo-wjf"/>
+                <constraint firstItem="xsP-YB-oUc" firstAttribute="top" secondItem="xPo-nD-qF9" secondAttribute="bottom" constant="15" id="f5e-M1-nsy"/>
+                <constraint firstItem="JeY-9d-Bh3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="nAj-8x-tv3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1589" y="-115"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Description My Channel View Controller-->
+        <scene sceneID="ZXY-24-Jrn">
+            <objects>
+                <viewController storyboardIdentifier="EditDescriptionMyChannelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xf5-5K-nlm" customClass="EditDescriptionMyChannelViewController" customModule="MyClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trr-tH-Uh2"/>
+                        <viewControllerLayoutGuide type="bottom" id="yUz-T8-ifb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="niF-vH-SFP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-tX-e6e" customClass="TextFieldFormView" customModule="MyClip" customModuleProvider="target">
+                                <rect key="frame" x="15" y="30" width="345" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="25z-kk-EqM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53h-dL-eEx">
+                                <rect key="frame" x="325" y="98" width="35" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="53h-dL-eEx" firstAttribute="top" secondItem="9kY-tX-e6e" secondAttribute="bottom" constant="10" id="9UU-aK-Z24"/>
+                            <constraint firstAttribute="trailing" secondItem="9kY-tX-e6e" secondAttribute="trailing" constant="15" id="EgI-Ma-4N2"/>
+                            <constraint firstItem="9kY-tX-e6e" firstAttribute="top" secondItem="trr-tH-Uh2" secondAttribute="bottom" constant="30" id="Pse-bX-08A"/>
+                            <constraint firstAttribute="trailing" secondItem="53h-dL-eEx" secondAttribute="trailing" constant="15" id="Q9N-Y1-fEJ"/>
+                            <constraint firstItem="9kY-tX-e6e" firstAttribute="leading" secondItem="niF-vH-SFP" secondAttribute="leading" constant="15" id="bTd-nf-G3Z"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="countLabel" destination="53h-dL-eEx" id="1OZ-Wj-kaP"/>
+                        <outlet property="descriptionText" destination="9kY-tX-e6e" id="kgc-lC-TJR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ILV-5X-xbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186" y="80"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDatePickerViewController" customModule="MyClip" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="htc-ja-EQJ" id="7hp-5b-Ejg"/>
+                <outlet property="datePickerDate" destination="h5t-I6-L0P" id="CWe-dz-V6K"/>
+                <outlet property="okBtn" destination="KKP-Ic-y91" id="opu-VF-qEZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="h5t-I6-L0P">
+                    <rect key="frame" x="0.0" y="1" width="375" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="v5N-EG-Myu"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="524041300.90129">
+                        <!--2017-08-10 07:01:40 +0000-->
+                    </date>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htc-ja-EQJ">
+                    <rect key="frame" x="0.0" y="182" width="187.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="owR-Lo-rNd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                    <state key="normal" title="Hủy">
+                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCancelButton:" destination="-1" eventType="touchUpInside" id="mGM-c1-EDU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-p3-UKv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="h1U-zX-7zq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCl-xq-5Np">
+                    <rect key="frame" x="0.0" y="181" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ici-nd-enX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIP-NZ-pWH">
+                    <rect key="frame" x="187.5" y="187" width="0.5" height="30"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="xIs-gv-aVS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKP-Ic-y91">
+                    <rect key="frame" x="188" y="182" width="187" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zxc-lp-HWc"/>
+                    </constraints>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickOKButton:" destination="-1" eventType="touchUpInside" id="iuC-lI-NdW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uIP-NZ-pWH" firstAttribute="leading" secondItem="htc-ja-EQJ" secondAttribute="trailing" id="07M-oA-NbA"/>
+                <constraint firstItem="TCl-xq-5Np" firstAttribute="top" secondItem="h5t-I6-L0P" secondAttribute="bottom" id="0Dx-40-rKx"/>
+                <constraint firstItem="uIP-NZ-pWH" firstAttribute="top" secondItem="TCl-xq-5Np" secondAttribute="bottom" constant="5" id="6v8-hQ-BIJ"/>
+                <constraint firstAttribute="trailing" secondItem="h5t-I6-L0P" secondAttribute="trailing" id="Af2-o7-kfz"/>
+                <constraint firstAttribute="bottom" secondItem="uIP-NZ-pWH" secondAttribute="bottom" constant="5" id="E2e-KL-0Vs"/>
+                <constraint firstItem="TCl-xq-5Np" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GBw-vR-bPY"/>
+                <constraint firstItem="KKP-Ic-y91" firstAttribute="leading" secondItem="uIP-NZ-pWH" secondAttribute="trailing" id="GSo-XY-S7u"/>
+                <constraint firstItem="Fmo-p3-UKv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KPz-vx-WL7"/>
+                <constraint firstItem="htc-ja-EQJ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:2" id="Mwp-W5-e3F"/>
+                <constraint firstAttribute="trailing" secondItem="KKP-Ic-y91" secondAttribute="trailing" id="OTb-RZ-Wl5"/>
+                <constraint firstItem="KKP-Ic-y91" firstAttribute="centerY" secondItem="uIP-NZ-pWH" secondAttribute="centerY" id="XnX-WW-G5J"/>
+                <constraint firstItem="Fmo-p3-UKv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y0O-oW-5Os"/>
+                <constraint firstItem="KKP-Ic-y91" firstAttribute="top" secondItem="TCl-xq-5Np" secondAttribute="bottom" id="fiJ-q4-C7T"/>
+                <constraint firstItem="htc-ja-EQJ" firstAttribute="top" secondItem="TCl-xq-5Np" secondAttribute="bottom" id="idT-kZ-7Iw"/>
+                <constraint firstItem="htc-ja-EQJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pjh-MU-mhP"/>
+                <constraint firstItem="h5t-I6-L0P" firstAttribute="top" secondItem="Fmo-p3-UKv" secondAttribute="bottom" id="sgK-Kb-aZx"/>
+                <constraint firstAttribute="trailing" secondItem="TCl-xq-5Np" secondAttribute="trailing" id="tck-S6-Mh1"/>
+                <constraint firstItem="h5t-I6-L0P" firstAttribute="top" secondItem="Fmo-p3-UKv" secondAttribute="bottom" id="tni-zF-dXK"/>
+                <constraint firstItem="h5t-I6-L0P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uwo-vc-aZq"/>
+                <constraint firstAttribute="trailing" secondItem="Fmo-p3-UKv" secondAttribute="trailing" id="wsa-gG-JKh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-254.5" y="-104"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E49D6B98-1E2F-4273-BA36-E618B09B1AD3"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C7ECB27-97F3-4D4F-80E3-692ABA65C9BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+            timestampString = "586019618.62028"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "showConfirmPopup(_:at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E75F7517-1105-47B6-8D81-E0407377B21C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+            timestampString = "586019618.620349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "showConfirmPopup(_:at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9A732B3-E851-4C02-92A8-A9805D6B750B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+            timestampString = "586019618.620399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "btnRegisterPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9078C7EC-780E-4B3B-84C5-62A24099A998"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+            timestampString = "586019618.620445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "btnRegisterPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "010E4B8E-E5C6-4C7C-B6B9-E918067E2DFC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/FilmDetail/View/FilmDetailView.swift"
+            timestampString = "602491749.260541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "255D0F14-8FB4-411E-BA71-754B80EDD91C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/FilmDetail/View/FilmDetailView.swift"
+            timestampString = "602491749.2605979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "791350E8-5652-4EBE-8D6F-C69AD15F7CBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+            timestampString = "586019618.620592"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "showConfirmPopup(_:at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "791350E8-5652-4EBE-8D6F-C69AD15F7CBA - 9443a6a84fbdcf1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_dmax___dev.ListPriceViewController.(showConfirmPopup in _7D85ABDA7952AAF697C4DF3DE288DF39)(_: _dmax___dev.PackageModel, at: Swift.Int) -&gt; ()"
+                  moduleName = "5dmax - dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/5DMax/5DMax/5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "2521">
+               </Location>
+               <Location
+                  uuid = "791350E8-5652-4EBE-8D6F-C69AD15F7CBA - 60b57c6bad792f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in _dmax___dev.ListPriceViewController.(showConfirmPopup in _7D85ABDA7952AAF697C4DF3DE288DF39)(_: _dmax___dev.PackageModel, at: Swift.Int) -&gt; ()"
+                  moduleName = "5dmax - dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/5DMax/5DMax/5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D2BA339-8EF0-468A-B2A6-10CE767974E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+            timestampString = "586019618.620665"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "showConfirmPopup(_:at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D2BA339-8EF0-468A-B2A6-10CE767974E5 - 9443a6a84fbdc90f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_dmax___dev.ListPriceViewController.(showConfirmPopup in _7D85ABDA7952AAF697C4DF3DE288DF39)(_: _dmax___dev.PackageModel, at: Swift.Int) -&gt; ()"
+                  moduleName = "5dmax - dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/5DMax/5DMax/5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "3642">
+               </Location>
+               <Location
+                  uuid = "0D2BA339-8EF0-468A-B2A6-10CE767974E5 - 2c1f995f2caf3ee2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.UIAlertAction) -&gt; () in _dmax___dev.ListPriceViewController.(showConfirmPopup in _7D85ABDA7952AAF697C4DF3DE288DF39)(_: _dmax___dev.PackageModel, at: Swift.Int) -&gt; ()"
+                  moduleName = "5dmax - dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/5DMax/5DMax/5dmax/ViewControllers/ListPrice/View/ListPriceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1D43611-C79F-4EFF-9D76-AB9C028AAE78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5dmax/ViewControllers/ChargesFilm/View/FilmChargesViewController.swift"
+            timestampString = "602477256.240564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "collectionTableViewCell(_:didSelectItemAtIndex:film:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55771810-CF76-420C-8844-E5DD43FA881C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Podfile"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

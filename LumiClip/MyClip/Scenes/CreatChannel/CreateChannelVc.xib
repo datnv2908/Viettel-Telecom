@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateChannelVc" customModule="uClip" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImg" destination="S1A-ID-C60" id="LKD-gp-VOh"/>
+                <outlet property="coverImg" destination="nVP-cL-Ztt" id="y0b-Z5-gVZ"/>
+                <outlet property="tfvDescChannel" destination="9iM-wX-ELs" id="wx5-ma-gNi"/>
+                <outlet property="tfvNameChannel" destination="jEq-ya-7Ag" id="557-Jz-je9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhv-aM-Xg6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="69"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="nVP-cL-Ztt">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S1A-ID-C60">
+                            <rect key="frame" x="177.5" y="5" width="59" height="59"/>
+                            <color key="backgroundColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="S1A-ID-C60" secondAttribute="height" multiplier="1:1" id="lKV-WC-8rR"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-CS-b4f">
+                            <rect key="frame" x="374" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Myc-Kk-6Sq"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="kws-Iv-ES2"/>
+                            </constraints>
+                            <state key="normal" image="iconCamera"/>
+                            <connections>
+                                <action selector="onPickerCoverImg:" destination="-1" eventType="touchUpInside" id="yaZ-Yi-JOV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx4-yT-Q25">
+                            <rect key="frame" x="177.5" y="5" width="59" height="59"/>
+                            <state key="normal" image="iconCamera"/>
+                            <connections>
+                                <action selector="onPickerAvatarImg:" destination="-1" eventType="touchUpInside" id="J4R-PM-YIR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bx4-yT-Q25" firstAttribute="height" secondItem="S1A-ID-C60" secondAttribute="height" id="07V-5T-Tjn"/>
+                        <constraint firstAttribute="trailing" secondItem="2z1-CS-b4f" secondAttribute="trailing" id="1bM-yr-D7b"/>
+                        <constraint firstItem="nVP-cL-Ztt" firstAttribute="top" secondItem="mhv-aM-Xg6" secondAttribute="top" id="2gc-Ye-qWf"/>
+                        <constraint firstAttribute="width" secondItem="mhv-aM-Xg6" secondAttribute="height" multiplier="6:1" id="3aC-MW-oGP"/>
+                        <constraint firstAttribute="bottom" secondItem="S1A-ID-C60" secondAttribute="bottom" constant="5" id="3eg-8p-V4Y"/>
+                        <constraint firstItem="S1A-ID-C60" firstAttribute="centerX" secondItem="mhv-aM-Xg6" secondAttribute="centerX" id="3ua-vt-VJa"/>
+                        <constraint firstAttribute="trailing" secondItem="nVP-cL-Ztt" secondAttribute="trailing" id="5ne-Z1-v8K"/>
+                        <constraint firstAttribute="bottom" secondItem="nVP-cL-Ztt" secondAttribute="bottom" id="6VD-UZ-Abc"/>
+                        <constraint firstItem="S1A-ID-C60" firstAttribute="centerY" secondItem="mhv-aM-Xg6" secondAttribute="centerY" id="EE6-RS-kBr"/>
+                        <constraint firstItem="bx4-yT-Q25" firstAttribute="centerY" secondItem="S1A-ID-C60" secondAttribute="centerY" id="IyR-B4-orh"/>
+                        <constraint firstItem="bx4-yT-Q25" firstAttribute="width" secondItem="S1A-ID-C60" secondAttribute="width" id="KHk-Z7-ymX"/>
+                        <constraint firstItem="S1A-ID-C60" firstAttribute="top" secondItem="mhv-aM-Xg6" secondAttribute="top" constant="5" id="P56-fV-XPa"/>
+                        <constraint firstItem="nVP-cL-Ztt" firstAttribute="leading" secondItem="mhv-aM-Xg6" secondAttribute="leading" id="U07-ZB-Una"/>
+                        <constraint firstItem="2z1-CS-b4f" firstAttribute="top" secondItem="mhv-aM-Xg6" secondAttribute="top" id="V5e-z5-x9T"/>
+                        <constraint firstItem="bx4-yT-Q25" firstAttribute="centerX" secondItem="S1A-ID-C60" secondAttribute="centerX" id="YfJ-jU-33r"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-ya-7Ag" customClass="TextFieldFormView" customModule="uClip" customModuleProvider="target">
+                    <rect key="frame" x="10" y="123" width="394" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LJH-z5-Em1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iM-wX-ELs" customClass="TextFieldFormView" customModule="uClip" customModuleProvider="target">
+                    <rect key="frame" x="10" y="183" width="394" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TTQ-dB-hT7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="mhv-aM-Xg6" firstAttribute="width" secondItem="mhv-aM-Xg6" secondAttribute="height" multiplier="6:1" id="FJC-B9-j6B"/>
+                <constraint firstItem="mhv-aM-Xg6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IWw-Yx-VlV"/>
+                <constraint firstItem="mhv-aM-Xg6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PxN-nR-wfS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jEq-ya-7Ag" secondAttribute="trailing" constant="10" id="UME-mm-Zba"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9iM-wX-ELs" secondAttribute="trailing" constant="10" id="Wac-qj-Atb"/>
+                <constraint firstItem="jEq-ya-7Ag" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="fNH-Jg-N6X"/>
+                <constraint firstItem="9iM-wX-ELs" firstAttribute="top" secondItem="jEq-ya-7Ag" secondAttribute="bottom" constant="10" id="hjM-Vc-rAd"/>
+                <constraint firstItem="9iM-wX-ELs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="ixH-bP-vWp"/>
+                <constraint firstItem="mhv-aM-Xg6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qfe-Lf-kyT"/>
+                <constraint firstItem="jEq-ya-7Ag" firstAttribute="top" secondItem="mhv-aM-Xg6" secondAttribute="bottom" constant="10" id="rMd-14-EZy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bitmap" width="375" height="110"/>
+        <image name="iconCamera" width="28" height="24"/>
+    </resources>
+</document>

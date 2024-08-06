@@ -1,0 +1,45 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+inhibit_all_warnings!
+target 'MeuClip' do
+    project 'MeuClip'
+
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for MyClip
+    pod 'DateToolsSwift'
+    pod 'Alamofire'
+    pod 'Kingfisher'
+    pod 'SnapKit'
+    pod 'SVProgressHUD'
+    pod 'SwiftyJSON'
+    pod 'Toast'
+    pod 'SVPullToRefresh'
+    pod 'TPKeyboardAvoiding'
+    pod 'ReachabilitySwift','~> 3.0'
+    pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
+    pod 'RealmSwift', '~> 3.20.0'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'RAReorderableLayout'
+    pod 'GRKGradientView'
+    pod 'PureLayout'
+    pod 'RSKKeyboardAnimationObserver'
+    pod 'RSKPlaceholderTextView'
+    pod 'SDWebImage'
+    pod 'SDWebImage/WebP'
+    pod 'EasyNotificationBadge'
+#    pod 'HockeySDK', '~> 5.0.0'
+    pod 'CropViewController'
+    pod 'google-cast-sdk'
+    pod 'Firebase/Core'
+    pod 'Firebase/Performance'
+    pod 'Firebase/Analytics'
+    pod 'Countly'
+    pod 'MIBadgeButton-Swift', :git => 'https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git', :branch => 'master'
+    pod 'DLRadioButton'
+    pod 'Firebase/Messaging'
+    pod 'DatePickerDialog'
+end

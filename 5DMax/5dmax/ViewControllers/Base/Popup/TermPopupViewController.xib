@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermPopupViewController" customModule="Dev_5Dmax" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="YH8-nV-Huk" id="r66-NZ-npk"/>
+                <outlet property="view" destination="dnb-gc-aDw" id="JiJ-Ee-W6K"/>
+                <outlet property="webView" destination="uuG-pf-m46" id="Rqk-LU-sXB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dnb-gc-aDw">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kle-7S-OnN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v85-86-fZk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <connections>
+                                <action selector="btnDismissPressed:" destination="-1" eventType="touchUpInside" id="zDr-We-qRw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="v85-86-fZk" firstAttribute="leading" secondItem="kle-7S-OnN" secondAttribute="leading" id="7qf-to-h5a"/>
+                        <constraint firstAttribute="trailing" secondItem="v85-86-fZk" secondAttribute="trailing" id="j3u-E1-iDQ"/>
+                        <constraint firstItem="v85-86-fZk" firstAttribute="top" secondItem="kle-7S-OnN" secondAttribute="top" id="pjX-av-g7j"/>
+                        <constraint firstAttribute="bottom" secondItem="v85-86-fZk" secondAttribute="bottom" id="pvT-He-IJc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH8-nV-Huk">
+                    <rect key="frame" x="22" y="123" width="331" height="421"/>
+                    <subviews>
+                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuG-pf-m46">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="421"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <wkWebViewConfiguration key="configuration">
+                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                <wkPreferences key="preferences"/>
+                            </wkWebViewConfiguration>
+                        </wkWebView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FD-Gw-UdN">
+                            <rect key="frame" x="301" y="-10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2FD-Gw-UdN" secondAttribute="height" multiplier="1:1" id="0vk-7x-GlH"/>
+                                <constraint firstAttribute="height" constant="40" id="9EP-v3-twa"/>
+                            </constraints>
+                            <state key="normal" image="ionIosCloseOutlineIonicons"/>
+                            <connections>
+                                <action selector="btnDismissPressed:" destination="-1" eventType="touchUpInside" id="Wqo-hK-2jr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="uuG-pf-m46" firstAttribute="top" secondItem="YH8-nV-Huk" secondAttribute="top" id="9ic-H0-Ffb"/>
+                        <constraint firstItem="uuG-pf-m46" firstAttribute="leading" secondItem="YH8-nV-Huk" secondAttribute="leading" id="EkT-V4-pRz"/>
+                        <constraint firstAttribute="trailing" secondItem="2FD-Gw-UdN" secondAttribute="trailing" constant="-10" id="Fmi-FG-g1B"/>
+                        <constraint firstAttribute="bottom" secondItem="uuG-pf-m46" secondAttribute="bottom" id="MAa-bF-ziT"/>
+                        <constraint firstItem="2FD-Gw-UdN" firstAttribute="top" secondItem="YH8-nV-Huk" secondAttribute="top" constant="-10" id="QbH-bm-lkO"/>
+                        <constraint firstAttribute="trailing" secondItem="uuG-pf-m46" secondAttribute="trailing" id="TDo-NC-WHB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YH8-nV-Huk" firstAttribute="leading" secondItem="dnb-gc-aDw" secondAttribute="leading" constant="22" id="40S-Dt-Rs6"/>
+                <constraint firstItem="kle-7S-OnN" firstAttribute="leading" secondItem="dnb-gc-aDw" secondAttribute="leading" id="ICs-eY-Nd5"/>
+                <constraint firstItem="YH8-nV-Huk" firstAttribute="centerX" secondItem="dnb-gc-aDw" secondAttribute="centerX" id="NoU-fk-l5I"/>
+                <constraint firstAttribute="trailing" secondItem="YH8-nV-Huk" secondAttribute="trailing" constant="22" id="SFT-bE-KuD"/>
+                <constraint firstItem="YH8-nV-Huk" firstAttribute="centerY" secondItem="dnb-gc-aDw" secondAttribute="centerY" id="UHT-lO-CaR"/>
+                <constraint firstAttribute="trailing" secondItem="kle-7S-OnN" secondAttribute="trailing" id="Yjy-ia-3Vu"/>
+                <constraint firstItem="kle-7S-OnN" firstAttribute="top" secondItem="dnb-gc-aDw" secondAttribute="top" id="vad-Vz-c4W"/>
+                <constraint firstItem="YH8-nV-Huk" firstAttribute="top" secondItem="QKu-9X-Xa4" secondAttribute="top" constant="123" id="y9R-oW-UTT"/>
+                <constraint firstAttribute="bottom" secondItem="kle-7S-OnN" secondAttribute="bottom" id="zCS-fD-VmR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QKu-9X-Xa4"/>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ionIosCloseOutlineIonicons" width="16" height="16"/>
+    </resources>
+</document>

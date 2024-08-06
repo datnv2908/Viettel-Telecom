@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--List Category View Controller-->
+        <scene sceneID="i4N-cI-VKB">
+            <objects>
+                <viewController storyboardIdentifier="ListCategoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hgJ-d9-vAu" customClass="ListCategoryViewController" customModule="Dev_5Dmax" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eN7-aH-abT"/>
+                        <viewControllerLayoutGuide type="bottom" id="kde-bS-BqQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oMY-5n-0Mc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaP-3c-bMj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zyU-5h-3RQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Thể loại" image="icBack2"/>
+                                <connections>
+                                    <action selector="btnBackPressed:" destination="hgJ-d9-vAu" eventType="touchUpInside" id="8y7-zr-QIl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-Xl-U4l">
+                                <rect key="frame" x="0.0" y="44" width="375" height="559"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="9CS-1P-3dX">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="XFx-Zh-84r">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFx-Zh-84r" id="9CA-Js-uK2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hgJ-d9-vAu" id="aby-k0-prl"/>
+                                    <outlet property="delegate" destination="hgJ-d9-vAu" id="ia5-c6-zfP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BaP-3c-bMj" firstAttribute="top" secondItem="eN7-aH-abT" secondAttribute="bottom" id="6h2-vH-y4z"/>
+                            <constraint firstItem="kde-bS-BqQ" firstAttribute="top" secondItem="a5l-Xl-U4l" secondAttribute="bottom" id="CaU-cN-Z70"/>
+                            <constraint firstItem="BaP-3c-bMj" firstAttribute="leading" secondItem="oMY-5n-0Mc" secondAttribute="leading" id="G81-fR-ul9"/>
+                            <constraint firstItem="a5l-Xl-U4l" firstAttribute="top" secondItem="BaP-3c-bMj" secondAttribute="bottom" id="V5k-yu-rOM"/>
+                            <constraint firstAttribute="trailing" secondItem="BaP-3c-bMj" secondAttribute="trailing" id="dFU-5R-05N"/>
+                            <constraint firstAttribute="trailing" secondItem="a5l-Xl-U4l" secondAttribute="trailing" id="hw9-Fh-WsL"/>
+                            <constraint firstItem="a5l-Xl-U4l" firstAttribute="leading" secondItem="oMY-5n-0Mc" secondAttribute="leading" id="kEL-eh-yOg"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="btnType" destination="BaP-3c-bMj" id="TEs-ST-lVS"/>
+                        <outlet property="tableView" destination="a5l-Xl-U4l" id="4g8-uK-fnZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qt-lF-VHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930.39999999999998" y="182.15892053973016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icBack2" width="16" height="16"/>
+    </resources>
+</document>

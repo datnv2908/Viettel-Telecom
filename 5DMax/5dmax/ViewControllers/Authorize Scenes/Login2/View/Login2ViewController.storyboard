@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login2 View Controller-->
+        <scene sceneID="L3D-1x-dQF">
+            <objects>
+                <viewController storyboardIdentifier="Login2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9uE-dt-IOM" customClass="Login2ViewController" customModule="Bitel_Video" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mpL-J5-a4t"/>
+                        <viewControllerLayoutGuide type="bottom" id="t0m-5a-n2y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3xv-sp-50w">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo5D_gray" translatesAutoresizingMaskIntoConstraints="NO" id="gAm-fM-943">
+                                <rect key="frame" x="324" y="30" width="120" height="25.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nI0-lT-cbb">
+                                <rect key="frame" x="28" y="189.5" width="712" height="50"/>
+                                <color key="backgroundColor" name="yealowColor(fded00)"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aXU-5y-QLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="15"/>
+                                <state key="normal" title="Tiếp tục">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinuePressed:" destination="9uE-dt-IOM" eventType="touchUpInside" id="hwI-nL-AXX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-ET-Xtc" customClass="DarkTextField" customModule="Bitel_Video" customModuleProvider="target">
+                                <rect key="frame" x="28" y="131.5" width="712" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i2m-J1-iSp"/>
+                                </constraints>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="9uE-dt-IOM" id="pDe-ql-Gfy"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nI0-lT-cbb" firstAttribute="centerX" secondItem="3xv-sp-50w" secondAttribute="centerX" id="6s3-1V-yKk"/>
+                            <constraint firstItem="nI0-lT-cbb" firstAttribute="trailing" secondItem="nAh-ET-Xtc" secondAttribute="trailing" id="GBQ-rt-W3G"/>
+                            <constraint firstItem="nAh-ET-Xtc" firstAttribute="top" secondItem="gAm-fM-943" secondAttribute="bottom" constant="76" id="Hwb-Z2-lB6"/>
+                            <constraint firstItem="nAh-ET-Xtc" firstAttribute="centerX" secondItem="3xv-sp-50w" secondAttribute="centerX" id="O9j-zw-qWP"/>
+                            <constraint firstItem="gAm-fM-943" firstAttribute="centerX" secondItem="3xv-sp-50w" secondAttribute="centerX" id="RXI-o9-Olj"/>
+                            <constraint firstItem="nAh-ET-Xtc" firstAttribute="leading" secondItem="3xv-sp-50w" secondAttribute="leading" constant="28" id="TB1-uJ-hZ5"/>
+                            <constraint firstItem="nI0-lT-cbb" firstAttribute="top" secondItem="nAh-ET-Xtc" secondAttribute="bottom" constant="8" id="blJ-NZ-xM2"/>
+                            <constraint firstItem="nI0-lT-cbb" firstAttribute="leading" secondItem="nAh-ET-Xtc" secondAttribute="leading" id="dLx-XQ-mfJ"/>
+                            <constraint firstItem="gAm-fM-943" firstAttribute="top" secondItem="mpL-J5-a4t" secondAttribute="bottom" constant="30" id="l7A-7l-tsW"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btnContinue" destination="nI0-lT-cbb" id="sm8-Uq-OMM"/>
+                        <outlet property="txfPhone" destination="nAh-ET-Xtc" id="6hI-6X-Qbi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYm-EG-iEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1006" y="170"/>
+        </scene>
+        <!--Login2 View Controller-->
+        <scene sceneID="5Z7-eY-nBq">
+            <objects>
+                <viewController storyboardIdentifier="iPad" useStoryboardIdentifierAsRestorationIdentifier="YES" id="haV-JH-zaX" customClass="Login2ViewController" customModule="Bitel_Video" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u1W-Nz-zZ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="HsX-dp-6yi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jIv-qp-iNH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo5D_gray" translatesAutoresizingMaskIntoConstraints="NO" id="qYu-i1-EZJ">
+                                <rect key="frame" x="324" y="30" width="120" height="25.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCR-qK-6k0">
+                                <rect key="frame" x="56" y="189.5" width="656" height="50"/>
+                                <color key="backgroundColor" name="yealowColor(fded00)"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jMm-44-bFQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="15"/>
+                                <state key="normal" title="Tiếp tục">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinuePressed:" destination="haV-JH-zaX" eventType="touchUpInside" id="UjQ-7q-dPa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-ho-vxU" customClass="DarkTextField" customModule="Bitel_Video" customModuleProvider="target">
+                                <rect key="frame" x="56" y="131.5" width="656" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j2y-Es-SVX"/>
+                                </constraints>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="haV-JH-zaX" id="hEY-Gz-TYE"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jo3-ho-vxU" firstAttribute="leading" secondItem="jIv-qp-iNH" secondAttribute="leading" constant="56" id="0ZY-Ps-Azu"/>
+                            <constraint firstItem="qYu-i1-EZJ" firstAttribute="top" secondItem="u1W-Nz-zZ9" secondAttribute="bottom" constant="30" id="65w-aq-iAj"/>
+                            <constraint firstItem="gCR-qK-6k0" firstAttribute="trailing" secondItem="jo3-ho-vxU" secondAttribute="trailing" id="9cB-Qh-rmS"/>
+                            <constraint firstItem="gCR-qK-6k0" firstAttribute="top" secondItem="jo3-ho-vxU" secondAttribute="bottom" constant="8" id="Hel-DE-NmB"/>
+                            <constraint firstItem="gCR-qK-6k0" firstAttribute="centerX" secondItem="jIv-qp-iNH" secondAttribute="centerX" id="Kyz-Ls-D82"/>
+                            <constraint firstItem="qYu-i1-EZJ" firstAttribute="centerX" secondItem="jIv-qp-iNH" secondAttribute="centerX" id="S4o-c4-cFP"/>
+                            <constraint firstItem="jo3-ho-vxU" firstAttribute="centerX" secondItem="jIv-qp-iNH" secondAttribute="centerX" id="W3G-2P-QhZ"/>
+                            <constraint firstItem="jo3-ho-vxU" firstAttribute="top" secondItem="qYu-i1-EZJ" secondAttribute="bottom" constant="76" id="fw2-r5-BXB"/>
+                            <constraint firstItem="gCR-qK-6k0" firstAttribute="leading" secondItem="jo3-ho-vxU" secondAttribute="leading" id="nMP-6z-ECQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btnContinue" destination="gCR-qK-6k0" id="ars-CU-onS"/>
+                        <outlet property="txfPhone" destination="jo3-ho-vxU" id="wKE-jc-pOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bME-DG-oCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo5D_gray" width="120" height="25.5"/>
+        <namedColor name="yealowColor(fded00)">
+            <color red="0.99215686274509807" green="0.92941176470588238" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

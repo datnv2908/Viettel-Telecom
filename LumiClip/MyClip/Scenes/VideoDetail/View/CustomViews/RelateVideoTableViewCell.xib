@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RelateVideoTableViewCell" rowHeight="92" id="GTe-Jk-d6J" customClass="RelateVideoTableViewCell" customModule="MyClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GTe-Jk-d6J" id="ghc-y2-MKH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_video" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-2G-FN9">
+                        <rect key="frame" x="15" y="8" width="130" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rxm-2G-FN9" secondAttribute="height" multiplier="16:9" id="nKx-CW-ToQ"/>
+                            <constraint firstAttribute="width" constant="130" id="pWK-r0-YMo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xin Đừng Lặng Im - SOOBIN HOÀNG SƠN…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUB-l7-NqS">
+                        <rect key="frame" x="155" y="10" width="187" height="35"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1560 lượt xem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-Fv-aAg">
+                        <rect key="frame" x="155" y="49" width="187" height="16"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFv-1w-Tqd">
+                        <rect key="frame" x="342" y="5" width="33" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="l6b-ss-DsZ"/>
+                            <constraint firstAttribute="width" constant="33" id="q1O-eA-Lzh"/>
+                        </constraints>
+                        <state key="normal" image="moreGray"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 tiếng trước" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYt-zP-ILp">
+                        <rect key="frame" x="155" y="68" width="187" height="16"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jYt-zP-ILp" firstAttribute="top" secondItem="kaP-Fv-aAg" secondAttribute="bottom" constant="3" id="8JX-VH-g62"/>
+                    <constraint firstItem="TFv-1w-Tqd" firstAttribute="top" secondItem="ghc-y2-MKH" secondAttribute="top" constant="5" id="8Sd-r9-jQv"/>
+                    <constraint firstItem="LUB-l7-NqS" firstAttribute="top" secondItem="ghc-y2-MKH" secondAttribute="top" constant="10" id="DoP-Ab-uGg"/>
+                    <constraint firstItem="LUB-l7-NqS" firstAttribute="leading" secondItem="rxm-2G-FN9" secondAttribute="trailing" constant="10" id="E8v-B6-6i7"/>
+                    <constraint firstItem="kaP-Fv-aAg" firstAttribute="leading" secondItem="LUB-l7-NqS" secondAttribute="leading" id="F8O-8b-tsl"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rxm-2G-FN9" secondAttribute="bottom" constant="8" id="TIQ-O6-6ta"/>
+                    <constraint firstItem="jYt-zP-ILp" firstAttribute="trailing" secondItem="LUB-l7-NqS" secondAttribute="trailing" id="VtN-GU-BP8"/>
+                    <constraint firstItem="kaP-Fv-aAg" firstAttribute="trailing" secondItem="LUB-l7-NqS" secondAttribute="trailing" id="YyL-0S-F3K"/>
+                    <constraint firstItem="rxm-2G-FN9" firstAttribute="top" secondItem="ghc-y2-MKH" secondAttribute="top" constant="8" id="gmw-Yd-Rjf"/>
+                    <constraint firstItem="jYt-zP-ILp" firstAttribute="leading" secondItem="kaP-Fv-aAg" secondAttribute="leading" id="m8u-hN-eWt"/>
+                    <constraint firstItem="rxm-2G-FN9" firstAttribute="leading" secondItem="ghc-y2-MKH" secondAttribute="leading" constant="15" id="sY2-MB-6Wi"/>
+                    <constraint firstAttribute="trailing" secondItem="TFv-1w-Tqd" secondAttribute="trailing" id="va6-xs-46i"/>
+                    <constraint firstItem="TFv-1w-Tqd" firstAttribute="leading" secondItem="LUB-l7-NqS" secondAttribute="trailing" id="w47-vS-YCL"/>
+                    <constraint firstItem="kaP-Fv-aAg" firstAttribute="top" secondItem="LUB-l7-NqS" secondAttribute="bottom" constant="4" id="zyl-1r-EvC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="kaP-Fv-aAg" id="7xW-qh-mec"/>
+                <outlet property="postedAtLabel" destination="jYt-zP-ILp" id="B8N-83-rmh"/>
+                <outlet property="thumbImageView" destination="rxm-2G-FN9" id="Otj-aW-rCg"/>
+                <outlet property="titleLabel" destination="LUB-l7-NqS" id="1OX-Qn-qMa"/>
+            </connections>
+            <point key="canvasLocation" x="-61.5" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="moreGray" width="3" height="12"/>
+        <image name="placeholder_video" width="426" height="240"/>
+    </resources>
+</document>

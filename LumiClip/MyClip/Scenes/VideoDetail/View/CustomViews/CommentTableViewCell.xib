@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTableViewCell" rowHeight="115" id="roH-Qq-ztA" customClass="CommentTableViewCell" customModule="MeuClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="roH-Qq-ztA" id="0My-Bu-Ida">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bình luận" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOF-wP-7l8">
+                        <rect key="frame" x="15" y="15" width="50.5" height="14"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6969" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-Ti-HGk">
+                        <rect key="frame" x="75.5" y="15" width="27" height="14"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viết bình luận..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eiq-iU-ikL">
+                        <rect key="frame" x="52" y="63" width="83" height="14"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUserCopy" translatesAutoresizingMaskIntoConstraints="NO" id="72u-9K-wOM">
+                        <rect key="frame" x="15" y="54" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="dAP-n2-hw3"/>
+                            <constraint firstAttribute="width" constant="32" id="nAM-YW-2Ok"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4M-Dy-S5i">
+                        <rect key="frame" x="47" y="54" width="328" height="32"/>
+                        <connections>
+                            <action selector="onClickCommentButton:" destination="roH-Qq-ztA" eventType="touchUpInside" id="iux-Xe-P13"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Yn-Ux-fl0" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="AvB-Pg-RTz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBR-Jr-PB2" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="114" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="E4u-ku-IQZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="k4M-Dy-S5i" secondAttribute="trailing" id="6fm-tr-RAY"/>
+                    <constraint firstAttribute="bottom" secondItem="qBR-Jr-PB2" secondAttribute="bottom" id="8TJ-vP-qzd"/>
+                    <constraint firstItem="72u-9K-wOM" firstAttribute="leading" secondItem="ZOF-wP-7l8" secondAttribute="leading" id="9yG-fs-vDv"/>
+                    <constraint firstItem="k4M-Dy-S5i" firstAttribute="leading" secondItem="72u-9K-wOM" secondAttribute="trailing" id="CCb-Z6-Ebx"/>
+                    <constraint firstItem="4Yn-Ux-fl0" firstAttribute="leading" secondItem="0My-Bu-Ida" secondAttribute="leading" id="DgJ-ID-ULJ"/>
+                    <constraint firstItem="k4M-Dy-S5i" firstAttribute="height" secondItem="72u-9K-wOM" secondAttribute="height" id="HvK-wq-Fd5"/>
+                    <constraint firstAttribute="trailing" secondItem="qBR-Jr-PB2" secondAttribute="trailing" id="KXK-sX-vzu"/>
+                    <constraint firstAttribute="trailing" secondItem="4Yn-Ux-fl0" secondAttribute="trailing" id="OBR-wJ-FGs"/>
+                    <constraint firstItem="4Yn-Ux-fl0" firstAttribute="top" secondItem="0My-Bu-Ida" secondAttribute="top" id="Rs0-6a-l7O"/>
+                    <constraint firstItem="72u-9K-wOM" firstAttribute="top" secondItem="ZOF-wP-7l8" secondAttribute="bottom" constant="25" id="VIP-eI-hbp"/>
+                    <constraint firstItem="qBR-Jr-PB2" firstAttribute="leading" secondItem="0My-Bu-Ida" secondAttribute="leading" id="bt2-h0-jec"/>
+                    <constraint firstItem="k4M-Dy-S5i" firstAttribute="centerY" secondItem="72u-9K-wOM" secondAttribute="centerY" id="gkg-Xf-2fh"/>
+                    <constraint firstItem="dGn-Ti-HGk" firstAttribute="bottom" secondItem="ZOF-wP-7l8" secondAttribute="bottom" id="jaf-Lo-tgS"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="72u-9K-wOM" secondAttribute="bottom" constant="20" id="n4S-8m-31z"/>
+                    <constraint firstItem="Eiq-iU-ikL" firstAttribute="centerY" secondItem="72u-9K-wOM" secondAttribute="centerY" id="nPU-Nf-GsS"/>
+                    <constraint firstItem="ZOF-wP-7l8" firstAttribute="top" secondItem="0My-Bu-Ida" secondAttribute="top" constant="15" id="spd-bN-SgR"/>
+                    <constraint firstItem="Eiq-iU-ikL" firstAttribute="leading" secondItem="72u-9K-wOM" secondAttribute="trailing" constant="5" id="u3e-YK-sbu"/>
+                    <constraint firstItem="ZOF-wP-7l8" firstAttribute="leading" secondItem="0My-Bu-Ida" secondAttribute="leading" constant="15" id="xNa-g3-cn8"/>
+                    <constraint firstItem="dGn-Ti-HGk" firstAttribute="leading" secondItem="ZOF-wP-7l8" secondAttribute="trailing" constant="10" id="yf3-oW-COL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CommentBtn" destination="k4M-Dy-S5i" id="usU-hh-MAF"/>
+                <outlet property="bottomLineView" destination="qBR-Jr-PB2" id="jeQ-q1-uEF"/>
+                <outlet property="commentLabel" destination="ZOF-wP-7l8" id="KwP-5y-4si"/>
+                <outlet property="thumbImageView" destination="72u-9K-wOM" id="sZg-qj-vPp"/>
+                <outlet property="titleLabel" destination="dGn-Ti-HGk" id="LMH-NQ-gsK"/>
+                <outlet property="topLineView" destination="4Yn-Ux-fl0" id="Sao-qa-d9f"/>
+                <outlet property="writeCommentLabel" destination="Eiq-iU-ikL" id="w7T-Dt-mpN"/>
+            </connections>
+            <point key="canvasLocation" x="79.5" y="128.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconUserCopy" width="32" height="32"/>
+    </resources>
+</document>

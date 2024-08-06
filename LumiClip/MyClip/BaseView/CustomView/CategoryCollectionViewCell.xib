@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="MyClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUserLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Fa7-Ui-0EJ">
+                        <rect key="frame" x="11" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gzw-HC-Pfb"/>
+                            <constraint firstAttribute="width" constant="50" id="kN7-GE-VPV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP1-au-g9T">
+                        <rect key="frame" x="0.0" y="50" width="72" height="22"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AP1-au-g9T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9al-l8-w0z"/>
+                <constraint firstItem="Fa7-Ui-0EJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VXI-7J-Ylb"/>
+                <constraint firstItem="AP1-au-g9T" firstAttribute="top" secondItem="Fa7-Ui-0EJ" secondAttribute="bottom" id="cwX-nt-qn4"/>
+                <constraint firstAttribute="trailing" secondItem="AP1-au-g9T" secondAttribute="trailing" id="im6-4i-sdn"/>
+                <constraint firstAttribute="bottom" secondItem="AP1-au-g9T" secondAttribute="bottom" id="lNO-0G-yxg"/>
+                <constraint firstItem="Fa7-Ui-0EJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tAF-IK-t55"/>
+            </constraints>
+            <connections>
+                <outlet property="thumbImageView" destination="Fa7-Ui-0EJ" id="OpE-Jz-SK5"/>
+                <outlet property="titleLabel" destination="AP1-au-g9T" id="985-L5-pac"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconUserLarge" width="144" height="144"/>
+    </resources>
+</document>

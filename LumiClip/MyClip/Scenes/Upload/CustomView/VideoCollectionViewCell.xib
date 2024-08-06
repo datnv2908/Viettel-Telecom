@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCollectionViewCell" customModule="MyClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pcW-xQ-Kao">
+                        <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7s-uR-PQu">
+                        <rect key="frame" x="46.5" y="52.5" width="26.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pcW-xQ-Kao" secondAttribute="bottom" id="NOR-80-cdC"/>
+                <constraint firstItem="pcW-xQ-Kao" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZLz-zc-gO7"/>
+                <constraint firstItem="pcW-xQ-Kao" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cGL-hy-qEv"/>
+                <constraint firstAttribute="bottom" secondItem="e7s-uR-PQu" secondAttribute="bottom" constant="3" id="fUE-85-Eqa"/>
+                <constraint firstAttribute="trailing" secondItem="e7s-uR-PQu" secondAttribute="trailing" constant="3" id="spI-8E-NUg"/>
+                <constraint firstAttribute="trailing" secondItem="pcW-xQ-Kao" secondAttribute="trailing" id="szB-av-R91"/>
+            </constraints>
+            <size key="customSize" width="76" height="70"/>
+            <connections>
+                <outlet property="imageView" destination="pcW-xQ-Kao" id="d4L-jK-szQ"/>
+                <outlet property="timeLabel" destination="e7s-uR-PQu" id="OB1-ix-xXb"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="81"/>
+        </collectionViewCell>
+    </objects>
+</document>

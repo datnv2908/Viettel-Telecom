@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BCE8C73F-D0CF-4696-BE4C-68B97EF1A1EF"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BE80F97-112D-46E4-8046-717204E246AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyClip/BaseView/CustomView/VideoSmallImageTableViewCell.swift"
+            timestampString = "615175072.475358"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "bindingWithModel(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7662E12-9F3B-4AFF-953B-0450E7B2D7DA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyClip/BaseView/CustomView/NormalChannelTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "cellForSearchView(rowModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1C4EE60-5B87-49CA-B57C-EFCEEB705A67"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyClip/BaseView/ViewModel/VideoRowModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "init(model:identifier:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDC6E613-2914-430C-B9A6-29E9A8F79937"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyClip/Scenes/VideoDetail/View/VideoDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "onClickSendButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22F572C4-835F-43BB-9427-C45332AFCE79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyClip/Scenes/VideoDetail/Presenter/VideoDetailPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
+            landmarkName = "didSelectPostComment(comment:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22F572C4-835F-43BB-9427-C45332AFCE79 - 84fcd48bcea6d91e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeuClip.VideoDetailPresenter.didSelectPostComment(comment: Swift.String) -&gt; ()"
+                  moduleName = "MeuClip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/MyClip/MyClip/Scenes/VideoDetail/Presenter/VideoDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "316"
+                  endingLineNumber = "316"
+                  offsetFromSymbolStart = "337">
+               </Location>
+               <Location
+                  uuid = "22F572C4-835F-43BB-9427-C45332AFCE79 - 7723c8ed7486cfdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MeuClip.Result&lt;MeuClip.APIResponse&lt;MeuClip.CommentModel&gt;&gt;) -&gt; () in MeuClip.VideoDetailPresenter.didSelectPostComment(comment: Swift.String) -&gt; ()"
+                  moduleName = "MeuClip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/MyClip/MyClip/Scenes/VideoDetail/Presenter/VideoDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "318"
+                  endingLineNumber = "318"
+                  offsetFromSymbolStart = "151">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C998332-B02E-4BB3-88E9-41C5C83EAB36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyClip/Scenes/VideoDetail/Presenter/VideoDetailPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
+            landmarkName = "didSelectPostComment(comment:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C998332-B02E-4BB3-88E9-41C5C83EAB36 - 7723c8ed7486cfdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MeuClip.Result&lt;MeuClip.APIResponse&lt;MeuClip.CommentModel&gt;&gt;) -&gt; () in MeuClip.VideoDetailPresenter.didSelectPostComment(comment: Swift.String) -&gt; ()"
+                  moduleName = "MeuClip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/MyClip/MyClip/Scenes/VideoDetail/Presenter/VideoDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "318"
+                  endingLineNumber = "318"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  uuid = "6C998332-B02E-4BB3-88E9-41C5C83EAB36 - 7723c8ed7486cfdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MeuClip.Result&lt;MeuClip.APIResponse&lt;MeuClip.CommentModel&gt;&gt;) -&gt; () in MeuClip.VideoDetailPresenter.didSelectPostComment(comment: Swift.String) -&gt; ()"
+                  moduleName = "MeuClip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nghiendv/Viettel/MyClip/MyClip/Scenes/VideoDetail/Presenter/VideoDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "318"
+                  endingLineNumber = "318"
+                  offsetFromSymbolStart = "222">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

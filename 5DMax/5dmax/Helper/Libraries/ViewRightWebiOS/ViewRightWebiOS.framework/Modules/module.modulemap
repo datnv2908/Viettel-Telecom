@@ -1,0 +1,6 @@
+framework module ViewRightWebiOS {
+  umbrella header "ViewRightWebiOS.h"
+
+  export *
+  module * { export * }
+}

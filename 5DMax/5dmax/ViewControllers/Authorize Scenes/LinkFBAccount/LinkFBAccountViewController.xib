@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinkFBAccountViewController" customModule="Bitel_Video" customModuleProvider="target">
+            <connections>
+                <outlet property="btnConnect" destination="0Vw-c5-QYi" id="psn-Rv-MGr"/>
+                <outlet property="btnContact" destination="0bk-6D-Wfm" id="ZcW-ai-Vq5"/>
+                <outlet property="btnResendOTP" destination="9wA-vi-4rd" id="1kE-Dl-MKA"/>
+                <outlet property="lbltitle" destination="A78-Tv-Qnm" id="0Dq-qa-dH7"/>
+                <outlet property="otpTextField" destination="STF-kY-oCi" id="aAJ-IV-Dqe"/>
+                <outlet property="phoneLabel" destination="amF-wJ-6ox" id="gMJ-V9-vOW"/>
+                <outlet property="view" destination="phh-GB-cAJ" id="RFW-5R-RLZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="phh-GB-cAJ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p85-c5-VUa" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác thực liên kết tài khoản" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A78-Tv-Qnm">
+                            <rect key="frame" x="20" y="30" width="280" height="24"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vw-c5-QYi">
+                            <rect key="frame" x="20" y="227" width="280" height="40"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.92941176469999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="X6T-j2-zT5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="15"/>
+                            <state key="normal" title="Liên kết tài khoản">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onLinkAccount:" destination="-1" eventType="touchUpInside" id="Roq-Xw-eDV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-6D-Wfm">
+                            <rect key="frame" x="78.5" y="435" width="163" height="29"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                            <state key="normal" title="Liên hệ 198 để được hỗ trợ">
+                                <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onCall198:" destination="-1" eventType="touchUpInside" id="5eh-IS-OqZ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập mã xác thực đã được gửi tới số 0987654321 " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amF-wJ-6ox">
+                            <rect key="frame" x="20" y="95" width="280" height="36"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mã xác thực" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="STF-kY-oCi" customClass="DarkTextField" customModule="Bitel_Video" customModuleProvider="target">
+                            <rect key="frame" x="20" y="161" width="280" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="nQt-uV-heb"/>
+                            </constraints>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wA-vi-4rd">
+                            <rect key="frame" x="130" y="297" width="60" height="29"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                            <state key="normal" title="Gửi lại mã">
+                                <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onResendOtp:" destination="-1" eventType="touchUpInside" id="hvJ-m8-6XO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="amF-wJ-6ox" firstAttribute="top" secondItem="A78-Tv-Qnm" secondAttribute="bottom" constant="41" id="49D-8g-QpY"/>
+                        <constraint firstItem="STF-kY-oCi" firstAttribute="trailing" secondItem="A78-Tv-Qnm" secondAttribute="trailing" id="62i-vc-otR"/>
+                        <constraint firstItem="amF-wJ-6ox" firstAttribute="leading" secondItem="A78-Tv-Qnm" secondAttribute="leading" id="ETh-0S-Q8E"/>
+                        <constraint firstItem="A78-Tv-Qnm" firstAttribute="leading" secondItem="p85-c5-VUa" secondAttribute="leading" constant="20" id="I9L-be-DoC"/>
+                        <constraint firstItem="0Vw-c5-QYi" firstAttribute="trailing" secondItem="A78-Tv-Qnm" secondAttribute="trailing" id="KSC-z5-fdp"/>
+                        <constraint firstItem="STF-kY-oCi" firstAttribute="leading" secondItem="A78-Tv-Qnm" secondAttribute="leading" id="MlR-zL-8cg"/>
+                        <constraint firstItem="0Vw-c5-QYi" firstAttribute="leading" secondItem="A78-Tv-Qnm" secondAttribute="leading" id="OQJ-sn-BCf"/>
+                        <constraint firstItem="0bk-6D-Wfm" firstAttribute="centerX" secondItem="p85-c5-VUa" secondAttribute="centerX" id="PcG-5d-nsw"/>
+                        <constraint firstItem="9wA-vi-4rd" firstAttribute="top" secondItem="0Vw-c5-QYi" secondAttribute="bottom" constant="30" id="QoF-9X-6iL"/>
+                        <constraint firstItem="A78-Tv-Qnm" firstAttribute="centerX" secondItem="p85-c5-VUa" secondAttribute="centerX" id="Y31-IR-1W6"/>
+                        <constraint firstItem="amF-wJ-6ox" firstAttribute="trailing" secondItem="A78-Tv-Qnm" secondAttribute="trailing" id="Y61-6e-bqx"/>
+                        <constraint firstItem="A78-Tv-Qnm" firstAttribute="top" secondItem="p85-c5-VUa" secondAttribute="top" constant="30" id="aS2-6E-xet"/>
+                        <constraint firstItem="STF-kY-oCi" firstAttribute="top" secondItem="amF-wJ-6ox" secondAttribute="bottom" constant="30" id="bKY-bR-N9K"/>
+                        <constraint firstItem="9wA-vi-4rd" firstAttribute="centerX" secondItem="p85-c5-VUa" secondAttribute="centerX" id="cwi-6k-yBu"/>
+                        <constraint firstAttribute="bottom" secondItem="9wA-vi-4rd" secondAttribute="bottom" constant="50" id="jcf-jp-d11"/>
+                        <constraint firstAttribute="trailing" secondItem="A78-Tv-Qnm" secondAttribute="trailing" constant="20" id="vDU-El-Hik"/>
+                        <constraint firstItem="0Vw-c5-QYi" firstAttribute="top" secondItem="STF-kY-oCi" secondAttribute="bottom" constant="16" id="zED-RG-8cU"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="p85-c5-VUa" firstAttribute="top" secondItem="phh-GB-cAJ" secondAttribute="top" id="Ahk-w6-0x9"/>
+                <constraint firstAttribute="trailing" secondItem="p85-c5-VUa" secondAttribute="trailing" id="LZ0-Hg-c0N"/>
+                <constraint firstAttribute="bottom" secondItem="p85-c5-VUa" secondAttribute="bottom" id="NeA-FA-ezP"/>
+                <constraint firstItem="p85-c5-VUa" firstAttribute="leading" secondItem="phh-GB-cAJ" secondAttribute="leading" id="k7F-Z2-ae2"/>
+                <constraint firstAttribute="bottom" secondItem="0bk-6D-Wfm" secondAttribute="bottom" constant="16" id="qEx-sV-rsp"/>
+            </constraints>
+            <point key="canvasLocation" x="-166" y="41"/>
+        </view>
+    </objects>
+</document>

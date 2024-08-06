@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="T67-hI-tDY">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" id="Ba1-Pk-rr6" customClass="TutorialViewController" customModule="MyClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ebB-Ui-wTV"/>
+                        <viewControllerLayoutGuide type="bottom" id="710-Lr-Hl9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KEN-9H-3MR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6Ty-NY-nli">
+                                <rect key="frame" x="168" y="603" width="39" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="pageIndicatorTintColor" red="0.058823529411764705" green="0.36862745098039218" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-zU-202">
+                                <rect key="frame" x="298" y="605.5" width="57" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Bắt đầu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickStartButton:" destination="Ba1-Pk-rr6" eventType="touchUpInside" id="zca-ma-Kt1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGS-X0-Qvf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="703"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.54509803921568623" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vbO-zU-202" secondAttribute="trailing" constant="20" id="B5Q-cU-sXe"/>
+                            <constraint firstAttribute="trailing" secondItem="oGS-X0-Qvf" secondAttribute="trailing" id="JD8-FP-UF5"/>
+                            <constraint firstItem="oGS-X0-Qvf" firstAttribute="top" secondItem="KEN-9H-3MR" secondAttribute="top" id="N1P-RW-Nx8"/>
+                            <constraint firstItem="710-Lr-Hl9" firstAttribute="top" secondItem="6Ty-NY-nli" secondAttribute="bottom" constant="27" id="T6K-4r-pOM"/>
+                            <constraint firstItem="vbO-zU-202" firstAttribute="centerY" secondItem="6Ty-NY-nli" secondAttribute="centerY" id="U4c-PH-zFF"/>
+                            <constraint firstItem="oGS-X0-Qvf" firstAttribute="leading" secondItem="KEN-9H-3MR" secondAttribute="leading" id="ddJ-EV-gtm"/>
+                            <constraint firstItem="6Ty-NY-nli" firstAttribute="centerX" secondItem="KEN-9H-3MR" secondAttribute="centerX" id="ejH-hh-Aag"/>
+                            <constraint firstItem="710-Lr-Hl9" firstAttribute="top" secondItem="oGS-X0-Qvf" secondAttribute="bottom" constant="-36" id="fGt-zo-Mjt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beginButton" destination="vbO-zU-202" id="5FJ-Mv-vbW"/>
+                        <outlet property="containerView" destination="oGS-X0-Qvf" id="nQh-AB-Naz"/>
+                        <outlet property="pageControl" destination="6Ty-NY-nli" id="zVV-Qh-Vw8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayo-Yt-G6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536.79999999999995" y="-361.16941529235385"/>
+        </scene>
+    </scenes>
+</document>

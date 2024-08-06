@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Select Quality View Controller-->
+        <scene sceneID="Vwd-ty-6Mj">
+            <objects>
+                <viewController storyboardIdentifier="SelectQualityViewController" id="mCx-bc-eLn" customClass="SelectQualityViewController" customModule="Dev_5Dmax" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Erc-0y-qZX"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zc-Ux-2Sk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EVK-wa-gJV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phim chất lượng cao sẽ sử dụng nhiều Data hơn. Chất lượng phim có thể được điều chỉnh tự động dựa trên tốc độ mạng." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ3-2b-RhC">
+                                <rect key="frame" x="16" y="40" width="343" height="54"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ohj-5l-T3H">
+                                <rect key="frame" x="0.0" y="109" width="375" height="538"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yC2-0o-Nha">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yC2-0o-Nha" id="KtL-ZH-pcw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mCx-bc-eLn" id="RIg-ZG-Kbk"/>
+                                    <outlet property="delegate" destination="mCx-bc-eLn" id="lEd-bq-TIr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ohj-5l-T3H" secondAttribute="trailing" id="HEb-y2-suc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uZ3-2b-RhC" secondAttribute="leading" id="O3T-Z2-YDN"/>
+                            <constraint firstItem="uZ3-2b-RhC" firstAttribute="top" secondItem="Erc-0y-qZX" secondAttribute="bottom" constant="20" id="Oht-m6-R0T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uZ3-2b-RhC" secondAttribute="trailing" id="cSG-sg-ood"/>
+                            <constraint firstItem="6zc-Ux-2Sk" firstAttribute="top" secondItem="Ohj-5l-T3H" secondAttribute="bottom" constant="20" id="hdO-vb-7BM"/>
+                            <constraint firstItem="Ohj-5l-T3H" firstAttribute="leading" secondItem="EVK-wa-gJV" secondAttribute="leading" id="tIO-sF-vOL"/>
+                            <constraint firstItem="Ohj-5l-T3H" firstAttribute="top" secondItem="uZ3-2b-RhC" secondAttribute="bottom" constant="15" id="wqg-Ih-wBl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="uZ3-2b-RhC" id="yD3-mm-Tjh"/>
+                        <outlet property="tableView" destination="Ohj-5l-T3H" id="bpX-C4-YI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NmG-7m-ln7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="89"/>
+        </scene>
+    </scenes>
+</document>

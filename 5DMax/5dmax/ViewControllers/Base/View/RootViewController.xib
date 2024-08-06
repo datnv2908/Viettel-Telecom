@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="Dev_5Dmax" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="cU9-uN-kqD" id="ns5-5g-Jxs"/>
+                <outlet property="topView" destination="81m-zl-RqJ" id="TuW-m4-OUB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cU9-uN-kqD">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="evE-wT-iJu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81m-zl-RqJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cU9-uN-kqD" firstAttribute="top" secondItem="81m-zl-RqJ" secondAttribute="bottom" id="6z3-4o-uXi"/>
+                <constraint firstItem="81m-zl-RqJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="994-hA-1bM"/>
+                <constraint firstItem="cU9-uN-kqD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dxs-7M-YMp"/>
+                <constraint firstAttribute="bottom" secondItem="cU9-uN-kqD" secondAttribute="bottom" id="LHd-w9-JaJ"/>
+                <constraint firstAttribute="trailing" secondItem="cU9-uN-kqD" secondAttribute="trailing" id="Ytc-4p-6Ev"/>
+                <constraint firstItem="81m-zl-RqJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dfb-qm-rOh"/>
+                <constraint firstAttribute="trailing" secondItem="81m-zl-RqJ" secondAttribute="trailing" id="mbr-is-0A1"/>
+            </constraints>
+            <point key="canvasLocation" x="-135" y="50"/>
+        </view>
+    </objects>
+</document>

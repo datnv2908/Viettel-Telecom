@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-7z-pIj">
+                                <rect key="frame" x="143.5" y="257.5" width="88" height="152"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoMyclipBlue" translatesAutoresizingMaskIntoConstraints="NO" id="4nL-Fv-I6o">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                    </imageView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DgS-yI-ybX">
+                                        <rect key="frame" x="25.5" y="115" width="37" height="37"/>
+                                        <color key="color" red="0.96470588239999999" green="0.5450980392" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DgS-yI-ybX" firstAttribute="centerX" secondItem="wLb-7z-pIj" secondAttribute="centerX" id="1IL-eh-7bD"/>
+                                    <constraint firstAttribute="bottom" secondItem="DgS-yI-ybX" secondAttribute="bottom" id="556-dv-5hO"/>
+                                    <constraint firstItem="4nL-Fv-I6o" firstAttribute="leading" secondItem="wLb-7z-pIj" secondAttribute="leading" id="Xqf-en-iIa"/>
+                                    <constraint firstItem="DgS-yI-ybX" firstAttribute="top" secondItem="4nL-Fv-I6o" secondAttribute="bottom" constant="15" id="Y5u-xY-4yn"/>
+                                    <constraint firstItem="4nL-Fv-I6o" firstAttribute="top" secondItem="wLb-7z-pIj" secondAttribute="top" id="lXZ-rv-eyh"/>
+                                    <constraint firstAttribute="trailing" secondItem="4nL-Fv-I6o" secondAttribute="trailing" id="rlo-a4-hqc"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lunch" translatesAutoresizingMaskIntoConstraints="NO" id="Beb-Oe-pMg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Beb-Oe-pMg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Feg-dG-09D"/>
+                            <constraint firstItem="wLb-7z-pIj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hlm-6H-esn"/>
+                            <constraint firstItem="wLb-7z-pIj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IQq-vc-4GD"/>
+                            <constraint firstItem="Beb-Oe-pMg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="KNK-4L-l0O"/>
+                            <constraint firstAttribute="bottom" secondItem="Beb-Oe-pMg" secondAttribute="bottom" id="uNj-48-5ka"/>
+                            <constraint firstAttribute="trailing" secondItem="Beb-Oe-pMg" secondAttribute="trailing" id="xvb-0V-Wx2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_lunch" width="719" height="1280"/>
+        <image name="logoMyclipBlue" width="88" height="100"/>
+    </resources>
+</document>

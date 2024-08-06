@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogPictureViewController" customModule="MyClip" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="MiR-zz-MXu" id="aby-Ft-5Bi"/>
+                <outlet property="imageView" destination="HnK-a2-bYp" id="ahX-X7-5Is"/>
+                <outlet property="view" destination="NwB-q8-fxo" id="r9V-Rt-RKZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NwB-q8-fxo">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2A-18-Ofd">
+                    <rect key="frame" x="25" y="168.5" width="324" height="330"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HnK-a2-bYp">
+                            <rect key="frame" x="0.0" y="-0.5" width="324" height="330"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lời chúc ở đây" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiR-zz-MXu">
+                            <rect key="frame" x="80" y="245" width="164" height="17"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                            <color key="textColor" red="0.80392156862745101" green="0.1764705882352941" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="HnK-a2-bYp" firstAttribute="top" secondItem="s2A-18-Ofd" secondAttribute="top" id="99x-oJ-qg3"/>
+                        <constraint firstAttribute="trailing" secondItem="HnK-a2-bYp" secondAttribute="trailing" id="EwC-Kf-i1j"/>
+                        <constraint firstAttribute="width" constant="324" id="ImU-ot-82G"/>
+                        <constraint firstAttribute="trailing" secondItem="MiR-zz-MXu" secondAttribute="trailing" constant="80" id="NTo-Mp-upC"/>
+                        <constraint firstAttribute="bottom" secondItem="MiR-zz-MXu" secondAttribute="bottom" constant="68" id="Tbj-CS-YQm"/>
+                        <constraint firstItem="HnK-a2-bYp" firstAttribute="leading" secondItem="s2A-18-Ofd" secondAttribute="leading" id="Vzv-ue-8p8"/>
+                        <constraint firstAttribute="bottom" secondItem="HnK-a2-bYp" secondAttribute="bottom" id="j0r-p6-WGj"/>
+                        <constraint firstItem="MiR-zz-MXu" firstAttribute="leading" secondItem="s2A-18-Ofd" secondAttribute="leading" constant="80" id="og6-vi-0OQ"/>
+                        <constraint firstAttribute="height" constant="330" id="ohC-nY-5hI"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcn-xy-kdi">
+                    <rect key="frame" x="315" y="40" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Rzj-EU-Acr"/>
+                        <constraint firstAttribute="height" constant="40" id="bRI-Kh-Y69"/>
+                    </constraints>
+                    <state key="normal" image="iconEscape"/>
+                    <connections>
+                        <action selector="actionClose:" destination="-1" eventType="touchUpInside" id="6q3-LF-SO5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="s2A-18-Ofd" firstAttribute="centerX" secondItem="NwB-q8-fxo" secondAttribute="centerX" id="6yk-lu-GVr"/>
+                <constraint firstItem="s2A-18-Ofd" firstAttribute="leading" secondItem="NwB-q8-fxo" secondAttribute="leading" constant="25" id="OPk-hr-yGA"/>
+                <constraint firstAttribute="trailing" secondItem="fcn-xy-kdi" secondAttribute="trailing" constant="20" id="VQC-t3-Aik"/>
+                <constraint firstItem="fcn-xy-kdi" firstAttribute="top" secondItem="NwB-q8-fxo" secondAttribute="top" constant="40" id="pkr-Mr-pPr"/>
+                <constraint firstItem="s2A-18-Ofd" firstAttribute="centerY" secondItem="NwB-q8-fxo" secondAttribute="centerY" id="wPc-as-3J7"/>
+            </constraints>
+            <point key="canvasLocation" x="-127.5" y="49.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconEscape" width="16" height="16"/>
+    </resources>
+</document>

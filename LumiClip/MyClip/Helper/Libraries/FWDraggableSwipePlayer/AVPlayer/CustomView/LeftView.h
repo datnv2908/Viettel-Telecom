@@ -1,0 +1,14 @@
+//
+//  LeftView.h
+//  MyClip
+//
+//  Created by ThuongPV-iOS on 11/8/17.
+//  Copyright © 2017 Huy Nguyen. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "XibView.h"
+@interface LeftView : XibView
+@property (weak, nonatomic) IBOutlet UIView *controlView;
+
+@end

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TrendingHeaderView" customModule="Dev_5Dmax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I65-UC-CAg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xu hướng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZl-zi-tUy">
+                    <rect key="frame" x="16" y="16" width="343" height="33"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wZl-zi-tUy" secondAttribute="bottom" constant="16" id="9SG-zs-5HB"/>
+                <constraint firstAttribute="bottom" secondItem="I65-UC-CAg" secondAttribute="bottom" id="CEb-2h-Asm"/>
+                <constraint firstAttribute="trailing" secondItem="wZl-zi-tUy" secondAttribute="trailing" constant="16" id="cjf-0F-Xzc"/>
+                <constraint firstItem="I65-UC-CAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="egL-1m-h0u"/>
+                <constraint firstItem="wZl-zi-tUy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="g5G-PR-cQB"/>
+                <constraint firstItem="wZl-zi-tUy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="rYZ-KN-ch7"/>
+                <constraint firstItem="I65-UC-CAg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x2r-Sf-uTC"/>
+                <constraint firstAttribute="trailing" secondItem="I65-UC-CAg" secondAttribute="trailing" id="zpV-hg-iPt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="wZl-zi-tUy" id="E3K-y5-SXa"/>
+            </connections>
+            <point key="canvasLocation" x="-61.5" y="-216.5"/>
+        </view>
+    </objects>
+</document>

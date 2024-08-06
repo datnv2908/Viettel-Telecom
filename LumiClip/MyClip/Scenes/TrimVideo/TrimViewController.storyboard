@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trim View Controller-->
+        <scene sceneID="dhN-Su-eRk">
+            <objects>
+                <viewController storyboardIdentifier="TrimViewController" id="muM-CI-mbf" customClass="TrimViewController" customModule="MyClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SoN-Dw-LSB"/>
+                        <viewControllerLayoutGuide type="bottom" id="GWs-if-u90"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dt6-nf-DUA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uS6-N4-Mzh">
+                                <rect key="frame" x="0.0" y="227.5" width="375" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uS6-N4-Mzh" secondAttribute="height" multiplier="16:9" id="mDv-br-xaq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvX-Ux-iL8">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="mFj-ty-eco"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57E-ap-sUT" customClass="ABVideoRangeSlider" customModule="MyClip" customModuleProvider="target">
+                                <rect key="frame" x="20" y="592" width="335" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDR-jv-0gX">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UDR-jv-0gX" secondAttribute="bottom" id="RlK-6B-MKR"/>
+                                    <constraint firstAttribute="trailing" secondItem="UDR-jv-0gX" secondAttribute="trailing" id="V4g-Ku-c3W"/>
+                                    <constraint firstItem="UDR-jv-0gX" firstAttribute="top" secondItem="57E-ap-sUT" secondAttribute="top" id="dub-Z5-9dH"/>
+                                    <constraint firstItem="UDR-jv-0gX" firstAttribute="leading" secondItem="57E-ap-sUT" secondAttribute="leading" id="neB-BG-HNA"/>
+                                    <constraint firstAttribute="height" constant="60" id="wjS-GQ-aRu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GWs-if-u90" firstAttribute="top" secondItem="57E-ap-sUT" secondAttribute="bottom" constant="15" id="0g9-cw-dXJ"/>
+                            <constraint firstItem="uS6-N4-Mzh" firstAttribute="centerX" secondItem="dt6-nf-DUA" secondAttribute="centerX" id="5uE-5u-P1U"/>
+                            <constraint firstAttribute="trailing" secondItem="57E-ap-sUT" secondAttribute="trailing" constant="20" id="Sv1-gI-KyP"/>
+                            <constraint firstItem="LvX-Ux-iL8" firstAttribute="leading" secondItem="dt6-nf-DUA" secondAttribute="leading" id="UN4-b4-Maw"/>
+                            <constraint firstAttribute="trailing" secondItem="LvX-Ux-iL8" secondAttribute="trailing" id="Xfw-6U-I8L"/>
+                            <constraint firstItem="57E-ap-sUT" firstAttribute="leading" secondItem="dt6-nf-DUA" secondAttribute="leading" constant="20" id="Z26-FQ-OeW"/>
+                            <constraint firstItem="GWs-if-u90" firstAttribute="top" secondItem="LvX-Ux-iL8" secondAttribute="bottom" id="g1w-yq-tCQ"/>
+                            <constraint firstAttribute="trailing" secondItem="uS6-N4-Mzh" secondAttribute="trailing" id="h7b-Nd-fED"/>
+                            <constraint firstItem="uS6-N4-Mzh" firstAttribute="leading" secondItem="dt6-nf-DUA" secondAttribute="leading" id="thS-fQ-zL9"/>
+                            <constraint firstItem="uS6-N4-Mzh" firstAttribute="centerY" secondItem="dt6-nf-DUA" secondAttribute="centerY" id="yXq-hj-kuM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frameContainerView" destination="UDR-jv-0gX" id="2w5-WF-2KF"/>
+                        <outlet property="videoContainerView" destination="uS6-N4-Mzh" id="3fd-Ph-I4t"/>
+                        <outlet property="videoRangeSliderView" destination="57E-ap-sUT" id="GT8-6d-GWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z40-rB-OnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+</document>

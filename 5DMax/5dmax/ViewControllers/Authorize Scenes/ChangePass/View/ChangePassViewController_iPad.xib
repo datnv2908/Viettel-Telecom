@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePassViewController" customModule="Dev_5Dmax" customModuleProvider="target">
+            <connections>
+                <outlet property="btnChangePass" destination="608-GQ-1La" id="dhn-Ar-FKq"/>
+                <outlet property="btnForgot" destination="8uv-Ks-OIr" id="fep-q0-FLG"/>
+                <outlet property="imgCaptcha" destination="tnN-yk-gxr" id="VAa-xM-q4X"/>
+                <outlet property="txfCaptcha" destination="jqf-Nf-4oa" id="WQ0-D8-7xD"/>
+                <outlet property="txfNewPassword" destination="Rfg-zG-ntR" id="a2b-SC-KQD"/>
+                <outlet property="txfOldPassword" destination="hFM-da-4U1" id="wwA-e4-GNM"/>
+                <outlet property="txfRepeatPass" destination="STv-0x-LmD" id="Rob-hg-xQo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-jn-JTl" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu cũ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFM-da-4U1" customClass="DarkTextField" customModule="Dev_5Dmax" customModuleProvider="target">
+                            <rect key="frame" x="56" y="30" width="656" height="44"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="tMw-O5-aW8"/>
+                            </constraints>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu mới" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rfg-zG-ntR" customClass="DarkTextField" customModule="Dev_5Dmax" customModuleProvider="target">
+                            <rect key="frame" x="56" y="84" width="656" height="44"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="BqA-rN-CRw"/>
+                            </constraints>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập lại mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STv-0x-LmD" customClass="DarkTextField" customModule="Dev_5Dmax" customModuleProvider="target">
+                            <rect key="frame" x="56" y="138" width="656" height="44"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="hl8-tA-cn5"/>
+                            </constraints>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="608-GQ-1La">
+                            <rect key="frame" x="56" y="261" width="656" height="44"/>
+                            <color key="backgroundColor" red="0.8666666666666667" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="H6R-zW-W44"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="15"/>
+                            <state key="normal" title="Đổi mật khẩu">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnChangePassword:" destination="-1" eventType="touchUpInside" id="RaQ-tV-kzH"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập mã xác nhận" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqf-Nf-4oa" customClass="DarkTextField" customModule="Dev_5Dmax" customModuleProvider="target">
+                            <rect key="frame" x="56" y="192" width="521" height="44"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uv-Ks-OIr">
+                            <rect key="frame" x="56" y="345" width="656" height="44"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <state key="normal" title="Quên mật khẩu?">
+                                <color key="titleColor" red="0.16862745098039217" green="0.57647058823529407" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnForgotPass:" destination="-1" eventType="touchUpInside" id="zPw-ag-APb"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNV-FF-LSE">
+                            <rect key="frame" x="592" y="197" width="120" height="34"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-yk-gxr" customClass="ImageCapcharView" customModule="Dev_5Dmax" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="34"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2P-am-NbI">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="34"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="btnChangeCaptcha:" destination="-1" eventType="touchUpInside" id="IOh-kg-HIC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="W2P-am-NbI" firstAttribute="top" secondItem="YNV-FF-LSE" secondAttribute="top" id="2jC-6F-KVO"/>
+                                <constraint firstAttribute="bottom" secondItem="tnN-yk-gxr" secondAttribute="bottom" id="3Vf-Sl-gWJ"/>
+                                <constraint firstItem="tnN-yk-gxr" firstAttribute="top" secondItem="YNV-FF-LSE" secondAttribute="top" id="8P9-L3-EOB"/>
+                                <constraint firstAttribute="trailing" secondItem="W2P-am-NbI" secondAttribute="trailing" id="8bA-zD-hY7"/>
+                                <constraint firstAttribute="width" constant="120" id="OAY-di-p0Q"/>
+                                <constraint firstAttribute="trailing" secondItem="tnN-yk-gxr" secondAttribute="trailing" id="RpF-aM-2bG"/>
+                                <constraint firstItem="tnN-yk-gxr" firstAttribute="leading" secondItem="YNV-FF-LSE" secondAttribute="leading" id="hZ6-k2-F8S"/>
+                                <constraint firstItem="W2P-am-NbI" firstAttribute="leading" secondItem="YNV-FF-LSE" secondAttribute="leading" id="mCj-DU-6zH"/>
+                                <constraint firstAttribute="bottom" secondItem="W2P-am-NbI" secondAttribute="bottom" id="s7B-IS-YtE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hFM-da-4U1" secondAttribute="trailing" constant="56" id="07r-67-xdT"/>
+                        <constraint firstItem="608-GQ-1La" firstAttribute="leading" secondItem="jqf-Nf-4oa" secondAttribute="leading" id="1n6-fT-kxK"/>
+                        <constraint firstItem="Rfg-zG-ntR" firstAttribute="width" secondItem="hFM-da-4U1" secondAttribute="width" id="8BU-Be-Cmk"/>
+                        <constraint firstItem="Rfg-zG-ntR" firstAttribute="top" secondItem="hFM-da-4U1" secondAttribute="bottom" constant="10" id="9cQ-cA-8iy"/>
+                        <constraint firstAttribute="bottom" secondItem="8uv-Ks-OIr" secondAttribute="bottom" constant="30" id="ElR-Lw-mO6"/>
+                        <constraint firstItem="608-GQ-1La" firstAttribute="trailing" secondItem="hFM-da-4U1" secondAttribute="trailing" id="JJg-pM-eIC"/>
+                        <constraint firstItem="hFM-da-4U1" firstAttribute="leading" secondItem="yvv-jn-JTl" secondAttribute="leading" constant="56" id="LT4-ve-iZo"/>
+                        <constraint firstItem="YNV-FF-LSE" firstAttribute="leading" secondItem="jqf-Nf-4oa" secondAttribute="trailing" constant="15" id="OVm-uN-kqN"/>
+                        <constraint firstItem="8uv-Ks-OIr" firstAttribute="width" secondItem="608-GQ-1La" secondAttribute="width" id="Qro-LT-6dX"/>
+                        <constraint firstItem="8uv-Ks-OIr" firstAttribute="top" secondItem="608-GQ-1La" secondAttribute="bottom" constant="40" id="RCM-fG-sVI"/>
+                        <constraint firstItem="608-GQ-1La" firstAttribute="top" secondItem="jqf-Nf-4oa" secondAttribute="bottom" constant="25" id="VoD-dw-jPR"/>
+                        <constraint firstItem="YNV-FF-LSE" firstAttribute="trailing" secondItem="STv-0x-LmD" secondAttribute="trailing" id="Vpv-e0-AOf"/>
+                        <constraint firstItem="STv-0x-LmD" firstAttribute="top" secondItem="Rfg-zG-ntR" secondAttribute="bottom" constant="10" id="Wnw-aA-yyR"/>
+                        <constraint firstItem="jqf-Nf-4oa" firstAttribute="top" secondItem="STv-0x-LmD" secondAttribute="bottom" constant="10" id="YhL-MJ-ukb"/>
+                        <constraint firstItem="8uv-Ks-OIr" firstAttribute="trailing" secondItem="hFM-da-4U1" secondAttribute="trailing" id="dDa-m2-fhI"/>
+                        <constraint firstItem="Rfg-zG-ntR" firstAttribute="trailing" secondItem="hFM-da-4U1" secondAttribute="trailing" id="fsT-gr-ugy"/>
+                        <constraint firstItem="jqf-Nf-4oa" firstAttribute="height" secondItem="STv-0x-LmD" secondAttribute="height" id="jZs-Jr-qf9"/>
+                        <constraint firstItem="jqf-Nf-4oa" firstAttribute="leading" secondItem="STv-0x-LmD" secondAttribute="leading" id="oif-5H-EHL"/>
+                        <constraint firstItem="hFM-da-4U1" firstAttribute="top" secondItem="yvv-jn-JTl" secondAttribute="top" constant="30" id="rrJ-fr-kLB"/>
+                        <constraint firstItem="YNV-FF-LSE" firstAttribute="centerY" secondItem="jqf-Nf-4oa" secondAttribute="centerY" id="sT7-X1-yYa"/>
+                        <constraint firstItem="STv-0x-LmD" firstAttribute="width" secondItem="Rfg-zG-ntR" secondAttribute="width" id="tXf-IU-ibs"/>
+                        <constraint firstItem="STv-0x-LmD" firstAttribute="leading" secondItem="Rfg-zG-ntR" secondAttribute="leading" id="uLG-kW-waE"/>
+                        <constraint firstItem="STv-0x-LmD" firstAttribute="trailing" secondItem="hFM-da-4U1" secondAttribute="trailing" id="vCW-1I-2zD"/>
+                        <constraint firstItem="8uv-Ks-OIr" firstAttribute="height" secondItem="608-GQ-1La" secondAttribute="height" id="x93-Es-5mk"/>
+                        <constraint firstItem="hFM-da-4U1" firstAttribute="centerX" secondItem="yvv-jn-JTl" secondAttribute="centerX" id="ypO-bg-YFk"/>
+                        <constraint firstItem="Rfg-zG-ntR" firstAttribute="leading" secondItem="hFM-da-4U1" secondAttribute="leading" id="zpF-78-NSQ"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yvv-jn-JTl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9p4-ut-kRe"/>
+                <constraint firstAttribute="bottom" secondItem="yvv-jn-JTl" secondAttribute="bottom" id="IH5-zK-4v7"/>
+                <constraint firstItem="yvv-jn-JTl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jWF-UX-GB4"/>
+                <constraint firstAttribute="trailing" secondItem="yvv-jn-JTl" secondAttribute="trailing" id="wDu-mC-JSJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-74.5" y="42.5"/>
+        </view>
+    </objects>
+</document>

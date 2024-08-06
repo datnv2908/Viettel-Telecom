@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RelateVideoHeaderView" customModule="MeuClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4E-nW-FUv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tự động phát" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37I-qh-se5">
+                            <rect key="frame" x="227" y="15.5" width="81" height="16"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="13"/>
+                            <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-53-pXJ">
+                            <rect key="frame" x="316" y="8" width="51" height="31"/>
+                            <color key="onTintColor" red="0.0" green="0.50588235290000005" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toggleAutoPlay:" destination="iN0-l3-epB" eventType="valueChanged" id="nwN-2p-uh9"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xem tiếp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYW-BK-0oS">
+                            <rect key="frame" x="15" y="15.5" width="53.5" height="16"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="13"/>
+                            <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Sog-53-pXJ" secondAttribute="bottom" constant="8" id="5l2-0T-Rep"/>
+                        <constraint firstItem="wYW-BK-0oS" firstAttribute="centerY" secondItem="H4E-nW-FUv" secondAttribute="centerY" id="L2e-An-fxU"/>
+                        <constraint firstItem="Sog-53-pXJ" firstAttribute="top" secondItem="H4E-nW-FUv" secondAttribute="top" constant="8" id="as5-PV-6RH"/>
+                        <constraint firstAttribute="trailing" secondItem="Sog-53-pXJ" secondAttribute="trailing" constant="10" id="hD9-Lw-6Zn"/>
+                        <constraint firstItem="Sog-53-pXJ" firstAttribute="leading" secondItem="37I-qh-se5" secondAttribute="trailing" constant="8" id="mIo-rF-uHb"/>
+                        <constraint firstItem="wYW-BK-0oS" firstAttribute="leading" secondItem="H4E-nW-FUv" secondAttribute="leading" constant="15" id="p0F-ul-jOp"/>
+                        <constraint firstItem="37I-qh-se5" firstAttribute="centerY" secondItem="H4E-nW-FUv" secondAttribute="centerY" id="qoM-eP-0W2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="H4E-nW-FUv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qf7-53-XE0"/>
+                <constraint firstItem="H4E-nW-FUv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b4X-EY-dsg"/>
+                <constraint firstAttribute="trailing" secondItem="H4E-nW-FUv" secondAttribute="trailing" id="eu3-kj-CK6"/>
+                <constraint firstAttribute="bottom" secondItem="H4E-nW-FUv" secondAttribute="bottom" id="tvD-jx-Tu5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="autoLabel" destination="37I-qh-se5" id="hlO-no-OLf"/>
+                <outlet property="contentBgView" destination="H4E-nW-FUv" id="NYB-Rm-yNw"/>
+                <outlet property="switchView" destination="Sog-53-pXJ" id="YMK-pU-F4x"/>
+                <outlet property="watchNextLabel" destination="wYW-BK-0oS" id="1aU-zf-wqP"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-257"/>
+        </view>
+    </objects>
+</document>

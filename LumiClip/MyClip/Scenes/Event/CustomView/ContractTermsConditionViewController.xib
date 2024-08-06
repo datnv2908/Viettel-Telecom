@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContractTermsConditionViewController" customModule="MyClip" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="L6d-rH-JPx" id="Gl8-yr-iu6"/>
+                <outlet property="okBtn" destination="4tI-Eq-zo1" id="N2a-VO-S9q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wvContent" destination="hXX-TO-dmE" id="Wlb-d2-IIJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXX-TO-dmE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tI-Eq-zo1">
+                    <rect key="frame" x="191.5" y="611" width="163.5" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="7OL-uL-Me7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                    <state key="normal" title="Tôi đã đọc và Đồng ý">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionAccept:" destination="-1" eventType="touchUpInside" id="D3b-fy-8SZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6d-rH-JPx">
+                    <rect key="frame" x="20" y="611" width="163.5" height="36"/>
+                    <color key="backgroundColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="li1-i1-tIs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                    <state key="normal" title="Từ chối">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="RJX-Hz-2xs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L6d-rH-JPx" firstAttribute="top" secondItem="hXX-TO-dmE" secondAttribute="bottom" constant="20" id="1MF-Oi-ETZ"/>
+                <constraint firstItem="hXX-TO-dmE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3iZ-MV-pX6"/>
+                <constraint firstItem="4tI-Eq-zo1" firstAttribute="leading" secondItem="L6d-rH-JPx" secondAttribute="trailing" constant="8" id="7Sa-wb-q2O"/>
+                <constraint firstItem="L6d-rH-JPx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8Of-YP-rfD"/>
+                <constraint firstAttribute="bottom" secondItem="4tI-Eq-zo1" secondAttribute="bottom" constant="20" id="Dgy-Ni-1pE"/>
+                <constraint firstAttribute="bottom" secondItem="L6d-rH-JPx" secondAttribute="bottom" constant="20" id="JQy-ua-35c"/>
+                <constraint firstAttribute="trailing" secondItem="4tI-Eq-zo1" secondAttribute="trailing" constant="20" id="KO9-3E-MHi"/>
+                <constraint firstAttribute="trailing" secondItem="hXX-TO-dmE" secondAttribute="trailing" id="hgA-Ig-7ue"/>
+                <constraint firstItem="4tI-Eq-zo1" firstAttribute="width" secondItem="L6d-rH-JPx" secondAttribute="width" id="le2-pn-gFw"/>
+                <constraint firstItem="hXX-TO-dmE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wHO-X3-qjf"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

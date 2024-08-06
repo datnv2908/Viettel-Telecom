@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Voice View Controller-->
+        <scene sceneID="Tqw-CC-jSN">
+            <objects>
+                <viewController storyboardIdentifier="SearchVoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MIz-Vw-kn1" customClass="SearchVoiceViewController" customModule="MyClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1e3-3l-ACY"/>
+                        <viewControllerLayoutGuide type="bottom" id="6z9-NV-sFI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LlH-TT-poH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFd-iZ-Z89" userLabel="Record Button">
+                                <rect key="frame" x="155" y="553" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.42745098039215684" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uFd-iZ-Z89" secondAttribute="height" id="CBv-Cp-o9i"/>
+                                    <constraint firstAttribute="height" constant="64" id="SWz-3J-eie"/>
+                                </constraints>
+                                <state key="normal" image="iconRecordNormal"/>
+                                <state key="selected" image="iconRecordOn"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRecord" destination="MIz-Vw-kn1" eventType="touchUpInside" id="6GP-E3-s7f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-51-WlU" userLabel="Cancel Button">
+                                <rect key="frame" x="321" y="613" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dpJ-51-WlU" secondAttribute="height" id="Nlg-Al-1Pt"/>
+                                    <constraint firstAttribute="width" constant="40" id="Q3z-XL-od8"/>
+                                </constraints>
+                                <state key="normal" image="iconEscapeGray"/>
+                                <connections>
+                                    <action selector="onCancel:" destination="MIz-Vw-kn1" eventType="touchUpInside" id="oSa-bX-l5h"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Speak now...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHE-Lg-PTu">
+                                <rect key="frame" x="20" y="47" width="335" height="24"/>
+                                <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath=" _placeholderLabel.textColor">
+                                        <color key="value" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dpJ-51-WlU" secondAttribute="trailing" constant="14" id="2zk-Js-VrE"/>
+                            <constraint firstItem="jHE-Lg-PTu" firstAttribute="top" secondItem="1e3-3l-ACY" secondAttribute="bottom" constant="27" id="Jbe-Tm-8aq"/>
+                            <constraint firstItem="uFd-iZ-Z89" firstAttribute="centerX" secondItem="LlH-TT-poH" secondAttribute="centerX" id="OOu-P5-x4G"/>
+                            <constraint firstItem="jHE-Lg-PTu" firstAttribute="leading" secondItem="LlH-TT-poH" secondAttribute="leading" constant="20" id="cz9-j8-Nhu"/>
+                            <constraint firstItem="6z9-NV-sFI" firstAttribute="top" secondItem="dpJ-51-WlU" secondAttribute="bottom" constant="14" id="hol-C1-xeg"/>
+                            <constraint firstAttribute="trailing" secondItem="jHE-Lg-PTu" secondAttribute="trailing" constant="20" id="jDk-kh-Ley"/>
+                            <constraint firstItem="6z9-NV-sFI" firstAttribute="top" secondItem="uFd-iZ-Z89" secondAttribute="bottom" constant="50" id="ucl-XC-Yfe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="uFd-iZ-Z89" id="HMS-m5-keu"/>
+                        <outlet property="resultTextField" destination="jHE-Lg-PTu" id="4Zc-fp-S0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfh-F9-N56" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconEscapeGray" width="16" height="16"/>
+        <image name="iconRecordNormal" width="64" height="64"/>
+        <image name="iconRecordOn" width="22" height="32"/>
+    </resources>
+</document>

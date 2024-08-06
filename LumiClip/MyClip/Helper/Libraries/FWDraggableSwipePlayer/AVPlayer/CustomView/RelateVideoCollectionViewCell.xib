@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RelateVideoCollectionViewCell" id="gTV-IL-0wX" customClass="RelateVideoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="205" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="Uuk-ar-4GC">
+                        <rect key="frame" x="0.0" y="0.0" width="205" height="105"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6n-zi-NWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="205" height="105"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXK-d9-7Hl">
+                                <rect key="frame" x="171.5" y="82" width="29.5" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-hO-Hut">
+                                        <rect key="frame" x="4" y="3" width="21.5" height="13"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7Wh-hO-Hut" secondAttribute="trailing" constant="4" id="Bog-A7-7oF"/>
+                                    <constraint firstItem="7Wh-hO-Hut" firstAttribute="top" secondItem="RXK-d9-7Hl" secondAttribute="top" constant="3" id="KxF-hI-0UP"/>
+                                    <constraint firstItem="7Wh-hO-Hut" firstAttribute="leading" secondItem="RXK-d9-7Hl" secondAttribute="leading" constant="4" id="ojV-pX-ieW"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Wh-hO-Hut" secondAttribute="bottom" constant="3" id="x2u-Oq-1es"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RXK-d9-7Hl" secondAttribute="bottom" constant="4" id="dRu-fP-ug5"/>
+                            <constraint firstAttribute="trailing" secondItem="RXK-d9-7Hl" secondAttribute="trailing" constant="4" id="ynr-iB-lKs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chúng ta không thuộc về nhau  | Sơn Tùng MTP  |  Video Official  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbU-Nh-jhw">
+                        <rect key="frame" x="9" y="7" width="187" height="49"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RbU-Nh-jhw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="0N9-VD-rov"/>
+                <constraint firstItem="Uuk-ar-4GC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Ku-57-eUt"/>
+                <constraint firstAttribute="trailing" secondItem="Uuk-ar-4GC" secondAttribute="trailing" id="EWL-M8-iqn"/>
+                <constraint firstItem="RbU-Nh-jhw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="HNR-3J-o7Q"/>
+                <constraint firstAttribute="trailing" secondItem="u6n-zi-NWZ" secondAttribute="trailing" id="KHH-o7-pd8"/>
+                <constraint firstAttribute="bottom" secondItem="u6n-zi-NWZ" secondAttribute="bottom" id="TLG-vP-zyc"/>
+                <constraint firstItem="Uuk-ar-4GC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UWv-W6-vzU"/>
+                <constraint firstAttribute="bottom" secondItem="Uuk-ar-4GC" secondAttribute="bottom" id="WaG-J8-z1x"/>
+                <constraint firstItem="u6n-zi-NWZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YjM-DR-Rp7"/>
+                <constraint firstItem="u6n-zi-NWZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mjq-ux-uBd"/>
+                <constraint firstAttribute="trailing" secondItem="RbU-Nh-jhw" secondAttribute="trailing" constant="9" id="sef-YQ-FWF"/>
+            </constraints>
+            <size key="customSize" width="205" height="105"/>
+            <connections>
+                <outlet property="coverImageView" destination="Uuk-ar-4GC" id="sgi-hS-iup"/>
+                <outlet property="durationLabel" destination="7Wh-hO-Hut" id="c07-Fp-kFx"/>
+                <outlet property="titleLabel" destination="RbU-Nh-jhw" id="KYH-Hh-7rd"/>
+            </connections>
+            <point key="canvasLocation" x="-139.5" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bitmap" width="375" height="110"/>
+    </resources>
+</document>

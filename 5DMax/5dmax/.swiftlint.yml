@@ -1,0 +1,13 @@
+disabled_rules: # rule identifiers to exclude from running
+- force_cast
+- force_try
+- identifier_name
+- type_body_length
+- file_length
+- function_body_length
+- function_parameter_count
+- vertical_parameter_alignment
+- line_length
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+- Pods

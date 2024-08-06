@@ -1,0 +1,6 @@
+framework module ViewRightWebiOS_debug {
+  umbrella header "ViewRightWebiOS_debug.h"
+
+  export *
+  module * { export * }
+}

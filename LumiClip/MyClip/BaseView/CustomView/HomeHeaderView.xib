@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeHeaderView" customModule="MyClip" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="fa8-qe-HsH"/>
+                <outlet property="labelHot" destination="iqu-w4-Z46" id="uZp-wM-p6W"/>
+                <outlet property="touchArea" destination="aTH-EI-zOC" id="Yce-Pp-f9v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqu-w4-Z46">
+                    <rect key="frame" x="12" y="14" width="32" height="19"/>
+                    <color key="backgroundColor" red="1" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="YBT-dS-v0g"/>
+                        <constraint firstAttribute="height" constant="19" id="aDV-MZ-fyc"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="cYD-Bb-lbL"/>
+                        <constraint firstAttribute="width" constant="32" id="nWv-54-ECN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRightBgHeader" translatesAutoresizingMaskIntoConstraints="NO" id="mk2-hq-XW5">
+                    <rect key="frame" x="276" y="6" width="94" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Yct-vN-WIE"/>
+                        <constraint firstAttribute="width" constant="94" id="beY-XL-xGS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xem video - Trúng thẻ cào, iPhoneX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuz-k9-HJU">
+                    <rect key="frame" x="54" y="15" width="321" height="17.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-EI-zOC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wuz-k9-HJU" secondAttribute="trailing" id="4gF-x4-nZF"/>
+                <constraint firstItem="iqu-w4-Z46" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DaF-yl-98X"/>
+                <constraint firstAttribute="trailing" secondItem="aTH-EI-zOC" secondAttribute="trailing" id="MmE-MZ-IVd"/>
+                <constraint firstItem="wuz-k9-HJU" firstAttribute="leading" secondItem="iqu-w4-Z46" secondAttribute="trailing" constant="10" id="Sfg-iO-uCm"/>
+                <constraint firstItem="aTH-EI-zOC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aEX-xf-yTU"/>
+                <constraint firstAttribute="bottom" secondItem="aTH-EI-zOC" secondAttribute="bottom" id="c41-f5-n04"/>
+                <constraint firstItem="mk2-hq-XW5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="e00-2b-ecq"/>
+                <constraint firstItem="iqu-w4-Z46" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="ehR-J7-LWy"/>
+                <constraint firstItem="wuz-k9-HJU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="f7m-6W-Aek"/>
+                <constraint firstAttribute="trailing" secondItem="mk2-hq-XW5" secondAttribute="trailing" constant="5" id="oei-Az-1Gw"/>
+                <constraint firstItem="aTH-EI-zOC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wY2-Nb-iw7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="44.5" y="60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icRightBgHeader" width="94" height="35"/>
+    </resources>
+</document>

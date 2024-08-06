@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChannelDetailsHomeViewController" customModule="MyClip" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="zSm-eR-c9M" id="DtO-Ch-Hzs"/>
+                <outlet property="view" destination="OWg-AL-9Kn" id="ftD-dx-TQA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OWg-AL-9Kn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-eR-c9M">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ksi-9l-MRf"/>
+                        <outlet property="delegate" destination="-1" id="Y5m-yT-1pF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zSm-eR-c9M" firstAttribute="top" secondItem="OWg-AL-9Kn" secondAttribute="top" id="RBZ-Sl-q3Q"/>
+                <constraint firstAttribute="bottom" secondItem="zSm-eR-c9M" secondAttribute="bottom" id="V8a-X3-K3b"/>
+                <constraint firstAttribute="trailing" secondItem="zSm-eR-c9M" secondAttribute="trailing" id="aV4-Ac-9bE"/>
+                <constraint firstItem="zSm-eR-c9M" firstAttribute="leading" secondItem="OWg-AL-9Kn" secondAttribute="leading" id="hKZ-11-4RD"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

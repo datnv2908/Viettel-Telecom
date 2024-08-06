@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilmDetailSelectQualityViewController" customModule="Dev_5Dmax" customModuleProvider="target">
+            <connections>
+                <outlet property="lblSelectQuality" destination="uBu-6I-lG6" id="kYh-uk-IKf"/>
+                <outlet property="tableView" destination="w7n-Xf-wek" id="IpF-s3-ats"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w7n-Xf-wek">
+                    <rect key="frame" x="0.0" y="33" width="375" height="634"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cXk-pl-SkE"/>
+                        <outlet property="delegate" destination="-1" id="qft-L1-VnV"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn chất lượng" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBu-6I-lG6">
+                    <rect key="frame" x="15" y="8" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uBu-6I-lG6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4ya-Da-7a7"/>
+                <constraint firstAttribute="bottom" secondItem="w7n-Xf-wek" secondAttribute="bottom" id="5VX-C0-Za7"/>
+                <constraint firstItem="w7n-Xf-wek" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ryg-kc-dpr"/>
+                <constraint firstAttribute="trailing" secondItem="w7n-Xf-wek" secondAttribute="trailing" id="ZW0-lG-eOr"/>
+                <constraint firstItem="uBu-6I-lG6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="cYt-ib-0mV"/>
+                <constraint firstItem="w7n-Xf-wek" firstAttribute="top" secondItem="uBu-6I-lG6" secondAttribute="bottom" constant="8" id="dy2-nl-xUf"/>
+                <constraint firstItem="uBu-6I-lG6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="u36-3t-10m"/>
+            </constraints>
+            <point key="canvasLocation" x="-347.5" y="-10.5"/>
+        </view>
+    </objects>
+</document>

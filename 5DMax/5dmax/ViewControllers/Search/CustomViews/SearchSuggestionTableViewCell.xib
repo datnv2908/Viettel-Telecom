@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="CLm-32-vd7" customClass="SearchSuggestionTableViewCell" customModule="Dev_5Dmax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CLm-32-vd7" id="iYt-k1-DHf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-hu-TnO">
+                        <rect key="frame" x="16" y="10" width="24" height="24"/>
+                        <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="HYm-Tj-yyG"/>
+                            <constraint firstAttribute="width" constant="24" id="c6k-zR-GZW"/>
+                        </constraints>
+                        <color key="tintColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="icSearch"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zo-Vo-7Kg">
+                        <rect key="frame" x="280" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="5Gb-pH-2Wc"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="D8Q-v1-153"/>
+                            <constraint firstAttribute="width" constant="24" id="MbO-O9-l5k"/>
+                            <constraint firstAttribute="height" constant="24" id="VX3-Ec-wil"/>
+                        </constraints>
+                        <color key="tintColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="icArrowSuggestion2"/>
+                        <connections>
+                            <action selector="onGetSuggestionText:" destination="CLm-32-vd7" eventType="touchUpInside" id="tm6-Kb-B9y"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hve-uX-MXu">
+                        <rect key="frame" x="52" y="13" width="216" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3zo-Vo-7Kg" firstAttribute="leading" secondItem="hve-uX-MXu" secondAttribute="trailing" constant="12" id="4kS-cl-Edx"/>
+                    <constraint firstItem="3zo-Vo-7Kg" firstAttribute="centerY" secondItem="iYt-k1-DHf" secondAttribute="centerY" id="5fB-RU-gnF"/>
+                    <constraint firstItem="hve-uX-MXu" firstAttribute="centerY" secondItem="FUe-hu-TnO" secondAttribute="centerY" id="9fp-UP-tyS"/>
+                    <constraint firstItem="FUe-hu-TnO" firstAttribute="leading" secondItem="iYt-k1-DHf" secondAttribute="leading" constant="16" id="Af4-eq-WtX"/>
+                    <constraint firstItem="hve-uX-MXu" firstAttribute="leading" secondItem="FUe-hu-TnO" secondAttribute="trailing" constant="12" id="VbU-bu-Ngc"/>
+                    <constraint firstItem="FUe-hu-TnO" firstAttribute="centerY" secondItem="iYt-k1-DHf" secondAttribute="centerY" id="mbr-dM-Ipo"/>
+                    <constraint firstItem="3zo-Vo-7Kg" firstAttribute="leading" secondItem="hve-uX-MXu" secondAttribute="trailing" constant="12" id="q7X-9x-sxg"/>
+                    <constraint firstItem="hve-uX-MXu" firstAttribute="leading" secondItem="FUe-hu-TnO" secondAttribute="trailing" constant="12" id="rK7-om-hgl"/>
+                    <constraint firstAttribute="trailing" secondItem="3zo-Vo-7Kg" secondAttribute="trailing" constant="16" id="tSI-lz-9XB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="hYX-k1-pDA"/>
+            <connections>
+                <outlet property="imageSearchButton" destination="FUe-hu-TnO" id="wKa-R8-qr2"/>
+                <outlet property="titleLabel" destination="hve-uX-MXu" id="sSe-Zs-Fpi"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icArrowSuggestion2" width="15" height="15"/>
+        <image name="icSearch" width="20" height="20"/>
+    </resources>
+</document>

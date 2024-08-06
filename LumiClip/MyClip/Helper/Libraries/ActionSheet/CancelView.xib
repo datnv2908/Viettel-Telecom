@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="b06-2z-q4Q" customClass="CancelView" customModule="MeuClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdr-K6-VaQ">
+                    <rect key="frame" x="0.0" y="0.0" width="53" height="54"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="mWZ-ki-2M1">
+                            <rect key="frame" x="18.5" y="19" width="16" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mWZ-ki-2M1" firstAttribute="centerX" secondItem="wdr-K6-VaQ" secondAttribute="centerX" id="MO2-tp-D7m"/>
+                        <constraint firstItem="mWZ-ki-2M1" firstAttribute="centerY" secondItem="wdr-K6-VaQ" secondAttribute="centerY" id="RYC-kI-I1P"/>
+                        <constraint firstAttribute="width" constant="53" id="v7D-gx-UmS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hủy bỏ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-tr-w7v">
+                    <rect key="frame" x="53" y="18" width="307" height="18"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                    <color key="textColor" red="0.01176470588" green="0.01176470588" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-hr-qdh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="f9Y-1y-MSw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wdr-K6-VaQ" firstAttribute="top" secondItem="b06-2z-q4Q" secondAttribute="top" id="3sH-kZ-XdT"/>
+                <constraint firstAttribute="bottom" secondItem="wdr-K6-VaQ" secondAttribute="bottom" id="7t9-fo-Jae"/>
+                <constraint firstItem="m6a-tr-w7v" firstAttribute="centerY" secondItem="b06-2z-q4Q" secondAttribute="centerY" id="9Ml-gO-YlI"/>
+                <constraint firstItem="QdQ-hr-qdh" firstAttribute="leading" secondItem="b06-2z-q4Q" secondAttribute="leading" id="EVv-We-5sg"/>
+                <constraint firstItem="QdQ-hr-qdh" firstAttribute="top" secondItem="b06-2z-q4Q" secondAttribute="top" id="PLM-qP-sTz"/>
+                <constraint firstAttribute="trailing" secondItem="m6a-tr-w7v" secondAttribute="trailing" constant="15" id="XoX-iT-V7W"/>
+                <constraint firstAttribute="trailing" secondItem="QdQ-hr-qdh" secondAttribute="trailing" id="aGS-t6-TbJ"/>
+                <constraint firstItem="m6a-tr-w7v" firstAttribute="leading" secondItem="wdr-K6-VaQ" secondAttribute="trailing" id="nrA-7u-912"/>
+                <constraint firstItem="wdr-K6-VaQ" firstAttribute="leading" secondItem="b06-2z-q4Q" secondAttribute="leading" id="vWq-2o-gWa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelLabel" destination="m6a-tr-w7v" id="R1W-Ak-L9M"/>
+                <outlet property="iconBg" destination="wdr-K6-VaQ" id="LiD-pd-wIi"/>
+                <outlet property="seprateView" destination="QdQ-hr-qdh" id="rep-4e-zLG"/>
+            </connections>
+            <point key="canvasLocation" x="-221.5" y="-355.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="16" height="16"/>
+    </resources>
+</document>

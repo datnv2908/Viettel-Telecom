@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoDetailPlaylistHeaderView" customModule="MyClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm6-J0-Ugd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51B-Xl-EF7">
+                            <rect key="frame" x="7" y="5" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="7dW-r5-ezo"/>
+                                <constraint firstAttribute="width" constant="32" id="uhX-aa-t8o"/>
+                            </constraints>
+                            <state key="normal" image="iconShuffleGray"/>
+                            <state key="selected" image="iconShuffleWhite"/>
+                            <connections>
+                                <action selector="onSuffer:" destination="iN0-l3-epB" eventType="touchUpInside" id="XoO-u9-bOh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06p-zR-F91">
+                            <rect key="frame" x="44" y="5" width="32" height="32"/>
+                            <state key="normal" image="iconRepeatGray"/>
+                            <state key="selected" image="iconRepeatWhite"/>
+                            <connections>
+                                <action selector="onRepeat:" destination="iN0-l3-epB" eventType="touchUpInside" id="ca0-SI-FI3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="06p-zR-F91" firstAttribute="leading" secondItem="51B-Xl-EF7" secondAttribute="trailing" constant="5" id="7Cl-AR-z2l"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="51B-Xl-EF7" secondAttribute="bottom" id="BB9-RS-ElJ"/>
+                        <constraint firstItem="06p-zR-F91" firstAttribute="width" secondItem="51B-Xl-EF7" secondAttribute="width" id="Cqr-2S-doS"/>
+                        <constraint firstItem="06p-zR-F91" firstAttribute="height" secondItem="51B-Xl-EF7" secondAttribute="height" id="IIY-pf-5Te"/>
+                        <constraint firstItem="06p-zR-F91" firstAttribute="bottom" secondItem="51B-Xl-EF7" secondAttribute="bottom" id="QSn-jg-HnQ"/>
+                        <constraint firstItem="51B-Xl-EF7" firstAttribute="top" secondItem="fm6-J0-Ugd" secondAttribute="top" constant="5" id="Y9f-RA-s7X"/>
+                        <constraint firstItem="51B-Xl-EF7" firstAttribute="leading" secondItem="fm6-J0-Ugd" secondAttribute="leading" constant="7" id="b77-1g-0eY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fm6-J0-Ugd" secondAttribute="bottom" id="JOd-od-fK7"/>
+                <constraint firstItem="fm6-J0-Ugd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Utc-xh-M2G"/>
+                <constraint firstItem="fm6-J0-Ugd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gP9-JQ-m0q"/>
+                <constraint firstAttribute="trailing" secondItem="fm6-J0-Ugd" secondAttribute="trailing" id="yQn-yI-l6u"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="repeatButton" destination="06p-zR-F91" id="iDw-IT-VHU"/>
+                <outlet property="sufferButton" destination="51B-Xl-EF7" id="Zzq-c1-8aP"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-259.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconRepeatGray" width="16" height="15"/>
+        <image name="iconRepeatWhite" width="16" height="15"/>
+        <image name="iconShuffleGray" width="16" height="15"/>
+        <image name="iconShuffleWhite" width="16" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="51" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="MyClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="iconTimer" translatesAutoresizingMaskIntoConstraints="NO" id="EXU-tU-DKX">
+                        <rect key="frame" x="11" y="13.5" width="26" height="24"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ZgRia9z4I9moQmbNMr5CNmp4gWQd7XEhxB8SmgVF35QdUWBZOJ7LYD1ubxRqkuG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTR-9O-ECL">
+                        <rect key="frame" x="57" y="16.5" width="223" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                        <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfU-eq-txT">
+                        <rect key="frame" x="280" y="0.0" width="40" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="En6-hj-utz"/>
+                            <constraint firstAttribute="width" constant="40" id="RDh-az-KUG"/>
+                        </constraints>
+                        <state key="normal" image="iconArrow"/>
+                        <connections>
+                            <action selector="onClickFilterButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nPq-sb-fSy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lfU-eq-txT" firstAttribute="leading" secondItem="kTR-9O-ECL" secondAttribute="trailing" id="3ef-uO-85K"/>
+                    <constraint firstItem="kTR-9O-ECL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Hx-OP-cbD"/>
+                    <constraint firstAttribute="trailing" secondItem="lfU-eq-txT" secondAttribute="trailing" id="Ccw-ie-hfy"/>
+                    <constraint firstItem="kTR-9O-ECL" firstAttribute="leading" secondItem="EXU-tU-DKX" secondAttribute="trailing" constant="20" id="DVq-Gk-COc"/>
+                    <constraint firstAttribute="bottom" secondItem="lfU-eq-txT" secondAttribute="bottom" priority="250" id="JYM-IR-ybk"/>
+                    <constraint firstItem="EXU-tU-DKX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e3w-C6-1Dy"/>
+                    <constraint firstItem="EXU-tU-DKX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="taI-WN-4rp"/>
+                    <constraint firstItem="lfU-eq-txT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uYf-Pd-Miz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="kTR-9O-ECL" id="9uv-Vp-EQi"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="24.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconArrow" width="14" height="14"/>
+        <image name="iconTimer" width="26" height="24"/>
+    </resources>
+</document>

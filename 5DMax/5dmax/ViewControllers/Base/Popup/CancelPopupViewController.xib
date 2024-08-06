@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelPopupViewController" customModule="Dev_5Dmax" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="Az1-Pn-BJT" id="aim-lm-oaf"/>
+                <outlet property="cancelPopupView" destination="tha-rs-joR" id="K0Q-wl-lX7"/>
+                <outlet property="titleLabel" destination="FMo-Cq-ch0" id="ebV-iL-IrB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u40-1k-LeI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tha-rs-joR">
+                    <rect key="frame" x="62.5" y="283.5" width="250" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-Pn-BJT">
+                            <rect key="frame" x="0.0" y="50" width="250" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="Bỏ qua">
+                                <color key="titleColor" red="0.99428314370000004" green="0.1032581806" blue="0.1974447895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onCancelButton:" destination="-1" eventType="touchUpInside" id="I5i-ie-KDi"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký gói cước" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMo-Cq-ch0">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FMo-Cq-ch0" firstAttribute="leading" secondItem="tha-rs-joR" secondAttribute="leading" id="8Of-ej-p0f"/>
+                        <constraint firstAttribute="bottom" secondItem="Az1-Pn-BJT" secondAttribute="bottom" id="JOR-2n-KPX"/>
+                        <constraint firstItem="Az1-Pn-BJT" firstAttribute="leading" secondItem="tha-rs-joR" secondAttribute="leading" id="ROD-9w-RF2"/>
+                        <constraint firstAttribute="height" constant="100" id="TCK-qU-e6U"/>
+                        <constraint firstAttribute="trailing" secondItem="FMo-Cq-ch0" secondAttribute="trailing" id="VfX-PD-lbn"/>
+                        <constraint firstAttribute="trailing" secondItem="Az1-Pn-BJT" secondAttribute="trailing" id="eTh-Li-DhP"/>
+                        <constraint firstItem="FMo-Cq-ch0" firstAttribute="height" secondItem="Az1-Pn-BJT" secondAttribute="height" id="hOn-KV-wCq"/>
+                        <constraint firstAttribute="width" constant="250" id="pDm-ga-UPz"/>
+                        <constraint firstItem="FMo-Cq-ch0" firstAttribute="top" secondItem="tha-rs-joR" secondAttribute="top" id="uwo-bk-MlZ"/>
+                        <constraint firstItem="Az1-Pn-BJT" firstAttribute="top" secondItem="FMo-Cq-ch0" secondAttribute="bottom" id="zLL-fl-qfD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u40-1k-LeI" secondAttribute="trailing" id="D4z-8w-g3h"/>
+                <constraint firstItem="tha-rs-joR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="S2z-Va-gJM"/>
+                <constraint firstItem="u40-1k-LeI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="s26-Ux-aRO"/>
+                <constraint firstItem="tha-rs-joR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t2n-br-aJC"/>
+                <constraint firstItem="u40-1k-LeI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tle-Ac-3lN"/>
+                <constraint firstItem="u40-1k-LeI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="vnN-7c-u8F"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="49.5" y="58.5"/>
+        </view>
+    </objects>
+</document>

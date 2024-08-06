@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="UploadProgressView" customModule="MeuClip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="423"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucv-f4-3LQ">
+                    <rect key="frame" x="15" y="167.5" width="251" height="88"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-7W-xHy">
+                            <rect key="frame" x="0.0" y="10" width="251" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjJ-Oc-bOx">
+                            <rect key="frame" x="112.5" y="45" width="26" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rUn-qs-DYk">
+                            <rect key="frame" x="15" y="74" width="221" height="4"/>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="FEG-7W-xHy" secondAttribute="trailing" id="CXi-d0-fub"/>
+                        <constraint firstItem="FEG-7W-xHy" firstAttribute="leading" secondItem="ucv-f4-3LQ" secondAttribute="leading" id="FSf-60-kBl"/>
+                        <constraint firstItem="rUn-qs-DYk" firstAttribute="leading" secondItem="ucv-f4-3LQ" secondAttribute="leading" constant="15" id="InI-mE-fYK"/>
+                        <constraint firstAttribute="bottom" secondItem="rUn-qs-DYk" secondAttribute="bottom" constant="10" id="K3M-gk-cB0"/>
+                        <constraint firstItem="FEG-7W-xHy" firstAttribute="top" secondItem="ucv-f4-3LQ" secondAttribute="top" constant="10" id="Wdq-hw-w5s"/>
+                        <constraint firstAttribute="trailing" secondItem="rUn-qs-DYk" secondAttribute="trailing" constant="15" id="hTA-LJ-KDW"/>
+                        <constraint firstItem="FjJ-Oc-bOx" firstAttribute="top" secondItem="FEG-7W-xHy" secondAttribute="bottom" constant="17" id="hdr-G4-jLf"/>
+                        <constraint firstItem="rUn-qs-DYk" firstAttribute="top" secondItem="FjJ-Oc-bOx" secondAttribute="bottom" constant="8" id="oxA-tH-wEs"/>
+                        <constraint firstItem="FjJ-Oc-bOx" firstAttribute="centerX" secondItem="ucv-f4-3LQ" secondAttribute="centerX" id="xi1-n7-iHp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ucv-f4-3LQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IKf-7W-Cac"/>
+                <constraint firstItem="ucv-f4-3LQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YsQ-JO-TuB"/>
+                <constraint firstItem="ucv-f4-3LQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="azM-zd-SDB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="percentLabel" destination="FjJ-Oc-bOx" id="p0B-9O-063"/>
+                <outlet property="progressView" destination="rUn-qs-DYk" id="0WG-fG-QVJ"/>
+                <outlet property="statusLabel" destination="FEG-7W-xHy" id="sr1-ee-uhF"/>
+            </connections>
+            <point key="canvasLocation" x="-219.5" y="-240.5"/>
+        </view>
+    </objects>
+</document>
