@@ -1,0 +1,14 @@
+fragment ToneBase on RingBackTone {
+  name
+  singerName
+  price
+  toneCode
+  orderTimes
+  availableAt
+  contentProvider {
+    id
+    name
+    imageUrl
+    group
+  }
+}

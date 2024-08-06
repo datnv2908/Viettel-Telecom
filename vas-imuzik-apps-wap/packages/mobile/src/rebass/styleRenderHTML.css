@@ -1,0 +1,28 @@
+.artical {
+    width: 100%;
+    object-fit: cover;
+}
+
+.artical img {
+    max-width: 100% !important;
+    object-fit: contain;
+    height: auto !important;
+}
+
+.artical-darktheme>*,
+.artical-darktheme>*>*,
+.artical-darktheme>*>*>*,
+.artical-darktheme>*>*>*>*,
+.artical-darktheme>*>*>*>*>*,
+.artical-darktheme>*>*>*>*>*>* {
+    color: white !important;
+}
+
+.artical-lighttheme>*,
+.artical-lighttheme>*>*,
+.artical-lighttheme>*>*>*,
+.artical-lighttheme>*>*>*>*,
+.artical-lighttheme>*>*>*>*>*,
+.artical-lighttheme>*>*>*>*>*>* {
+    color: black !important;
+}
